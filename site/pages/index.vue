@@ -1,8 +1,8 @@
 <template>
-    <video autoplay muted loop class="fixed -z-50 right-0 bottom-0 min-w-full min-h-full brightness-75">
-        <source src="/background.mp4" type="video/mp4">
-    </video>
-    <div class="w-full flex justify-center items-center pt-8">
+    <div class="w-full flex justify-center items-center pt-8 overflow-hidden">
+        <video autoplay muted loop class="fixed -z-10 right-0 bottom-0 min-w-full min-h-full brightness-75">
+            <source src="/background.mp4" type="video/mp4">
+        </video>
         <div class="w-[1000px] flex flex-col gap-8 items-center">
             <div class="flex justify-center items-center gap-8 bg-[rgba(0,0,0,0.05)] shadow-inner rounded-3xl">
                 <img class="w-60 h-60" src="/me-drawn.png" alt="me-drawn.png">
@@ -39,6 +39,54 @@
                 <door :icon="'😂'" :title="'Makai'" :location="'https://makaip.com'" :description="'A very enthusiastic friend who, as he says, enjoys coding, making stuff in Blender, playing the piano, and photography'" :tag="'Friend'" :tagColor="'#276266'" /> 
                 <door :icon="'😎'" :title="'Alex'" :location="'https://www.alexcastronovo.com/'" :description="'A research partner I have yet to properly befriend who has experience in many CS related fields'" :tag="'Friend'" :tagColor="'#276266'" /> 
             </div>
+            <!-- <div class="flex justify-between items-center w-full">
+                <div class="w-[45%] h-[1px] bg-white"></div>
+                <div class="w-6 h-6 bg-white rounded-full"></div>
+                <div class="w-[45%] h-[1px] bg-white"></div>
+            </div> -->
+            <section class="bg-black h-[35vh] w-screen sm:h-[50vh]"></section>
+            <!-- <section class="fixed -z-20 h-[35vh] sm:h-[50vh] bottom-0 flex flex-col justify-center items-center gap-5 sm:gap-12 p-5 sm:p-36">
+                
+                <div class="w-full sm:h-full flex items-center sm:gap-[250px]">
+                
+                <div class="flex flex-col justify-center items-center sm:justify-start sm:items-start self-start gap-3">
+                    <p class="text-xl text-gray-200 text-center sm:text-left">We make AI-generated text undetectable.</p>
+                </div>
+                
+                <div class="hidden sm:flex gap-24">
+                    <ul>
+                    <li class="text-3xl text-white font-semibold mb-4">Try Now</li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Sign up</NuxtLink></li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Login</NuxtLink></li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Demo</NuxtLink></li>
+                    </ul>
+                    <ul>
+                    <li class="text-3xl text-white font-semibold mb-4">Features</li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Undetector</NuxtLink></li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Generator</NuxtLink></li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Detector</NuxtLink></li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Camouflage</NuxtLink></li>
+                    </ul>
+                    <ul>
+                    <li class="text-3xl text-white font-semibold mb-4">Support</li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Contact</NuxtLink></li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Pricing</NuxtLink></li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Documentation</NuxtLink></li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Guides</NuxtLink></li>
+                    </ul>
+                    <ul>
+                    <li class="text-3xl text-white font-semibold mb-4">Company</li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">About</NuxtLink></li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Press</NuxtLink></li>
+                    <li class="text-lg text-gray-200 mb-2 cursor-pointer"><NuxtLink to="">Partners</NuxtLink></li>
+                    </ul>
+                </div>
+                </div>
+                
+                <div class="w-full h-[1px] bg-gray-500">ㅤ</div>
+                
+                <h1 class="text-lg text-gray-500 self-center sm:self-start text-center sm:text-left">© 2024 Chameleon, LLC. All rights reserved.</h1>
+            </section> -->
         </div>
     </div>
 </template>
