@@ -1,21 +1,21 @@
 <template>
     <div class="w-full flex justify-center items-center pt-8 overflow-hidden">
-        <video autoplay muted loop class="fixed -z-10 right-0 bottom-0 min-w-full min-h-full brightness-75">
+        <video autoplay muted loop class="fixed -z-10 right-0 bottom-0 hidden sm:block min-w-screen min-h-screen brightness-75">
             <source src="/background.mp4" type="video/mp4">
         </video>
         <div class="w-[1000px] flex flex-col gap-8 items-center">
-            <div class="flex justify-center items-center gap-8 bg-[rgba(0,0,0,0.05)] shadow-inner rounded-3xl">
-                <img class="w-60 h-60" src="/me-drawn.png" alt="me-drawn.png">
-                <div class="flex flex-col justify-center gap-5">
-                    <h1 class="text-5xl font-bold">Welcome <span class="text-3xl font-normal">to my info hub!</span></h1>
-                    <p class="text-xl max-w-[800px]">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-8 bg-[rgba(0,0,0,0.05)] shadow-inner rounded-3xl">
+                <img class="w-60 h-60 hidden sm:block" src="/me-drawn.png" alt="me-drawn.png">
+                <div class="flex flex-col justify-center gap-5 px-8 sm:px-0">
+                    <h1 class="text-3xl sm:text-5xl font-bold">Welcome <span class="text-xl sm:text-3xl font-normal">to my info hub!</span></h1>
+                    <p class="sm:text-xl max-w-[800px]">
                         Here is a lobby like place for all my portfolio type websites and personal web!
                         You'll also find some links to projects I've done in the past and continue to develop...
                         and maybe some easter eggs I left here and there riddled across my corner of the internet :D
                     </p>
                 </div>
             </div>
-            <div class="w-full flex flex-wrap justify-between max-h-[1800px]">
+            <div class="w-full flex flex-wrap justify-center sm:justify-between sm:max-h-[1800px]">
                 <door :icon="'👤'" :title="'Socials'" :location="'https://zachl.tech/'" :description="'My socials and contact info if you want to message me or reach out'" :tag="'Info'" :tagColor="'#1c567a'" />
                 <door :icon="'🗃️'" :title="'Portfolio'" :location="'#'" :description="'My portfolio site is currently non-existent and I will soon make it'" :tag="'Branding'" :tagColor="'#43b046'" /> 
                 <door :icon="'🍱'" :title="'Bentofolio'" :location="'https://bentofolio.zachl.tech'" :description="'My bento grid style portfolio - Not my official portfolio site though'" :tag="'Branding'" :tagColor="'#43b046'" /> 
@@ -45,7 +45,7 @@
                 <div class="w-6 h-6 bg-white rounded-full"></div>
                 <div class="w-[45%] h-[1px] bg-white"></div>
             </div> -->
-            <section class="p-4 bg-black h-[50vh] w-screen flex items-end poppins">
+            <section class="p-4 bg-black h-[50vh] w-screen flex justify-center sm:justify-start items-end poppins">
                 <a href="">
                     <pre class="font-mono text-md leading-none select-none">
 _|  _|      _|    _|  _|   
