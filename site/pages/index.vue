@@ -92,29 +92,34 @@
             </swiper>
         </div>
         <div class="w-[30vw] h-[12vh] px-3 border-[1px] border-slate-200 border-opacity-5 shadow-2xl rounded-[2rem] flex justify-around items-center">
-            <div class="relative group w-24 h-24 bg-black rounded-[25%] shadow-lg">
+            <div class="relative group w-24 h-24 rounded-[25%] flex justify-center items-center shadow-lg bg-cover">
+                <img class="scale-x-90" src="/icons/sitemap-icon.png" alt="">
                 <span class="tooltip-text absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-700 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                    App 1
+                    Sitemap (you are here)
                 </span>
             </div>
-            <div class="relative group w-24 h-24 bg-black rounded-[25%] shadow-lg">
+            <div class="relative group w-24 h-24 rounded-[25%]  flex justify-center items-center shadow-lg bg-cover">
+                <img class="scale-90" src="/icons/socials.png" alt="">
                 <span class="tooltip-text absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-700 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                    App 1
+                    Socials
                 </span>
             </div>
-            <div class="relative group w-24 h-24 bg-black rounded-[25%] shadow-lg">
+            <div class="relative group w-24 h-24 rounded-[25%] flex justify-center items-center shadow-lg bg-cover">
+                <img class="w-full h-full rounded-full"src="/icons/portfolio-neon.jpg" alt="">
                 <span class="tooltip-text absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-700 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                    App 1
+                    Portfolio
                 </span>
             </div>
-            <div class="relative group w-24 h-24 bg-black rounded-[25%] shadow-lg">
+            <div class="relative group w-24 h-24 rounded-[25%] flex justify-center items-center shadow-lg bg-cover">
+                <img src="/icons/resume.png" alt="">
                 <span class="tooltip-text absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-700 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                    App 1
+                    Résumé
                 </span>
             </div>
-            <div class="relative group w-24 h-24 bg-black rounded-[25%] shadow-lg">
+            <div class="relative group w-24 h-24 rounded-[25%] flex justify-center items-center shadow-lg bg-cover">
+                <img src="/icons/blog.png" alt="">
                 <span class="tooltip-text absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-700 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                    App 1
+                    Blog
                 </span>
             </div>
         </div>
