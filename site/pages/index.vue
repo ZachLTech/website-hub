@@ -1,11 +1,12 @@
 <template>
-    <div class="w-screen h-screen p-4 bg-white flex flex-col justify-between items-center">
+    <div style="background: url(/mountains.jpg); background-size: cover; background-attachment: fixed;" class="w-screen h-screen p-4 flex flex-col justify-between items-center">
         <AppModal
             :show="showModal"
             :appTitle="selectedApp.title"
             :description="selectedApp.description"
             :demoLink="selectedApp.demoLink"
             :githubLink="selectedApp.githubLink"
+            :sideImage="selectedApp.sideImage"
             @close="closeModal"
         />
         <div class="flex flex-col justify-center items-center m-6">
@@ -14,16 +15,24 @@
         <div class="flex flex-col justify-center items-center">
             <div class="w-[65vw] flex justify-between items-center">
                 <div class="flex flex-col justify-center items-center gap-2">
-                    <div class="w-[20.5vw] h-[20vh] rounded-[2rem] bg-slate-400 "></div>
-                    <p class="text-xl">Tile 1</p>
+                    <div class="w-[20.5vw] h-[20vh] rounded-[2rem] bg-slate-900 bg-opacity-50 shadow-2xl py-5 px-8 overflow-scroll flex justify-center items-center">
+                        <p class="text-xl overflow-scroll">👋🤠 Hi! 
+                            Welcome to my website hub! This page is designed like a mobile home screen, offering quick access to my other websites & more! Tap an icon for more info.
+                        </p>
+                    </div>
+                    <p class="text-xl">Summary</p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-2">
-                    <div class="w-[20.5vw] h-[20vh] rounded-[2rem] bg-slate-400 "></div>
-                    <p class="text-xl">Tile 1</p>
+                    <div class="w-[20.5vw] h-[20vh] rounded-[2rem] flex justify-center items-center overflow-hidden bg-slate-900 bg-opacity-50 shadow-2xl">
+                        <img class="w-full h-[90%]" src="https://spotify-github-profile.kittinanx.com/api/view?uid=playpaco12&cover_image=false&theme=default&show_offline=true&background_color=&interchange=true&bar_color_cover=false" alt="Spotify Status">
+                    </div>
+                    <p class="text-xl">Spotify Activity</p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-2">
-                    <div class="w-[20.5vw] h-[20vh] rounded-[2rem] bg-slate-400 "></div>
-                    <p class="text-xl">Tile 1</p>
+                    <div class="w-[20.5vw] h-[20vh] rounded-[2rem] flex justify-center items-center overflow-hidden bg-[#202225] shadow-2xl">
+                        <img class="w-full h-full" src="https://discord-readme-badge.vercel.app/api?id=829875896864866314" alt="Discord Status">
+                    </div>
+                    <p class="text-xl">Discord Activity</p>
                 </div>
             </div>
             <swiper
@@ -58,12 +67,31 @@
                         </div>
                     </div>
                 </swiper-slide>
-                <swiper-slide>Slide 2</swiper-slide>
-                <swiper-slide>Slide 3</swiper-slide>
-                ...
+                <swiper-slide>
+                    <div class="h-full flex flex-col justify-between px-16 py-8">
+                        <div class="flex flex-wrap justify-between">
+                            <AppButton
+                                v-for="(app, index) in appsP1R1"
+                                :key="index"
+                                :title="app.title"
+                                :backgroundImage="app.backgroundImage"
+                                @open-modal="openModalP1R1"
+                            />
+                        </div>
+                        <div class="flex flex-wrap justify-between">
+                            <AppButton
+                                v-for="(app, index) in appsP1R2"
+                                :key="index"
+                                :title="app.title"
+                                :backgroundImage="app.backgroundImage"
+                                @open-modal="openModalP1R2"
+                            />
+                        </div>
+                    </div>
+                </swiper-slide>
             </swiper>
         </div>
-        <div class="w-[30vw] h-[12vh] px-3 bg-slate-300 rounded-[2rem] flex justify-around items-center">
+        <div class="w-[30vw] h-[12vh] px-3 border-[1px] border-slate-200 border-opacity-5 shadow-2xl rounded-[2rem] flex justify-around items-center">
             <div class="relative group w-24 h-24 bg-black rounded-[25%] shadow-lg">
                 <span class="tooltip-text absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-700 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity">
                     App 1
@@ -129,7 +157,8 @@
                         backgroundImage: 'https://example.com/image1.jpg',
                         description: 'This is the description for App 1.',
                         demoLink: 'https://example.com/demo1',
-                        githubLink: 'https://github.com/user/repo1'
+                        githubLink: 'https://github.com/user/repo1', 
+                        sideImage: '/beachbg.jpg'
                     },
                     {
                         title: 'App 2',
