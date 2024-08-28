@@ -30,7 +30,7 @@
                 </div>
                 <div class="flex flex-col justify-center items-center gap-2">
                     <div class="w-[20.5vw] h-[20vh] rounded-[2rem] flex justify-center items-center overflow-hidden bg-[#202225] shadow-2xl">
-                        <img class="w-full h-full" src="https://discord-readme-badge.vercel.app/api?id=829875896864866314" alt="Discord Status">
+                        <img class="w-full h-full" src="https://discord-readme-badge.vercel.app/api?id=829875896864866314" alt="My Discord Status Image">
                     </div>
                     <p class="text-xl">Discord Activity</p>
                 </div>
@@ -71,7 +71,7 @@
                     <div class="h-full flex flex-col justify-between px-16 py-8">
                         <div class="flex flex-wrap justify-between">
                             <AppButton
-                                v-for="(app, index) in appsP1R1"
+                                v-for="(app, index) in appsP2R1"
                                 :key="index"
                                 :title="app.title"
                                 :backgroundImage="app.backgroundImage"
@@ -80,7 +80,7 @@
                         </div>
                         <div class="flex flex-wrap justify-between">
                             <AppButton
-                                v-for="(app, index) in appsP1R2"
+                                v-for="(app, index) in appsP2R2"
                                 :key="index"
                                 :title="app.title"
                                 :backgroundImage="app.backgroundImage"
@@ -158,43 +158,43 @@
                 selectedApp: {},
                 appsP1R1: [
                     {
-                        title: 'App 1',
-                        backgroundImage: 'https://example.com/image1.jpg',
-                        description: 'This is the description for App 1.',
-                        demoLink: 'https://example.com/demo1',
-                        githubLink: 'https://github.com/user/repo1', 
-                        sideImage: '/beachbg.jpg'
+                        title: 'SSHfolio',
+                        backgroundImage: '/icons/sshfolio-icon.png',
+                        description: `SSHfolio is a modular TUI (Text User Interface) portfolio application based on the Bubble Tea framework. This project allows you to showcase your portfolio in a terminal environment, providing a unique way to present your projects, biography, contact information, and more. It's designed to be easily customizable and self-hostable using Docker. I originally made this for personal use as my own SSH portfolio, but have since made it open source and modular so anyone can recreate their own SSHfolio adding their projects, experience, about me, etc.`,
+                        demoLink: 'https://github.com/ZachLTech/sshfolio',
+                        githubLink: 'https://github.com/ZachLTech/sshfolio', 
+                        sideImage: '/aside_pictures/sshfolio.png'
                     },
                     {
-                        title: 'App 2',
+                        title: 'Bentofolio',
                         backgroundImage: 'https://example.com/image2.jpg',
                         description: 'This is the description for App 2.',
                         demoLink: 'https://example.com/demo2',
                         githubLink: 'https://github.com/user/repo2'
                     },
                     {
-                        title: 'App 3',
+                        title: 'AEV-Software',
                         backgroundImage: 'https://example.com/image2.jpg',
                         description: 'This is the description for App 2.',
                         demoLink: 'https://example.com/demo2',
                         githubLink: 'https://github.com/user/repo2'
                     },
                     {
-                        title: 'App 4',
+                        title: 'Devfolify',
                         backgroundImage: 'https://example.com/image1.jpg',
                         description: 'This is the description for App 1.',
                         demoLink: 'https://example.com/demo1',
                         githubLink: 'https://github.com/user/repo1'
                     },
                     {
-                        title: 'App 5',
+                        title: 'Schedulix',
                         backgroundImage: 'https://example.com/image2.jpg',
                         description: 'This is the description for App 2.',
                         demoLink: 'https://example.com/demo2',
                         githubLink: 'https://github.com/user/repo2'
                     },
                     {
-                        title: 'App 6',
+                        title: 'WebDevDocs',
                         backgroundImage: 'https://example.com/image2.jpg',
                         description: 'This is the description for App 2.',
                         demoLink: 'https://example.com/demo2',
@@ -203,47 +203,100 @@
                 ],
                 appsP1R2: [
                     {
-                        title: 'App 7',
+                        title: 'Movie-Web',
                         backgroundImage: 'https://example.com/image1.jpg',
                         description: 'This is the description for App 1.',
                         demoLink: 'https://example.com/demo1',
                         githubLink: 'https://github.com/user/repo1'
                     },
                     {
-                        title: 'App 8',
+                        title: 'Fileshare',
                         backgroundImage: 'https://example.com/image2.jpg',
                         description: 'This is the description for App 2.',
                         demoLink: 'https://example.com/demo2',
                         githubLink: 'https://github.com/user/repo2'
                     },
                     {
-                        title: 'App 9',
+                        title: 'SearXNG',
                         backgroundImage: 'https://example.com/image2.jpg',
                         description: 'This is the description for App 2.',
                         demoLink: 'https://example.com/demo2',
                         githubLink: 'https://github.com/user/repo2'
                     },
                     {
-                        title: 'App 10',
+                        title: 'Thandi',
                         backgroundImage: 'https://example.com/image1.jpg',
                         description: 'This is the description for App 1.',
                         demoLink: 'https://example.com/demo1',
                         githubLink: 'https://github.com/user/repo1'
                     },
                     {
-                        title: 'App 11',
+                        title: 'Amarnath',
                         backgroundImage: 'https://example.com/image2.jpg',
                         description: 'This is the description for App 2.',
                         demoLink: 'https://example.com/demo2',
                         githubLink: 'https://github.com/user/repo2'
                     },
                     {
-                        title: 'App 12',
+                        title: 'Jossaya',
                         backgroundImage: 'https://example.com/image2.jpg',
                         description: 'This is the description for App 2.',
                         demoLink: 'https://example.com/demo2',
                         githubLink: 'https://github.com/user/repo2'
                     },
+                ],
+                appsP2R1: [
+                    {
+                        title: 'Makai',
+                        backgroundImage: 'https://example.com/image1.jpg',
+                        description: 'This is the description for App 1.',
+                        demoLink: 'https://example.com/demo1',
+                        githubLink: 'https://github.com/user/repo1'
+                    },
+                    {
+                        title: 'Alex',
+                        backgroundImage: 'https://example.com/image2.jpg',
+                        description: 'This is the description for App 2.',
+                        demoLink: 'https://example.com/demo2',
+                        githubLink: 'https://github.com/user/repo2'
+                    },
+                    {
+                        title: 'Network Chuck',
+                        backgroundImage: 'https://example.com/image2.jpg',
+                        description: 'This is the description for App 2.',
+                        demoLink: 'https://example.com/demo2',
+                        githubLink: 'https://github.com/user/repo2'
+                    },
+                    {
+                        title: 'Fireship',
+                        backgroundImage: 'https://example.com/image1.jpg',
+                        description: 'This is the description for App 1.',
+                        demoLink: 'https://example.com/demo1',
+                        githubLink: 'https://github.com/user/repo1'
+                    },
+                    {
+                        title: 'Frying Pan',
+                        backgroundImage: 'https://example.com/image2.jpg',
+                        description: 'This is the description for App 2.',
+                        demoLink: 'https://example.com/demo2',
+                        githubLink: 'https://github.com/user/repo2'
+                    },
+                    {
+                        title: 'Raid Owl',
+                        backgroundImage: 'https://example.com/image2.jpg',
+                        description: 'This is the description for App 2.',
+                        demoLink: 'https://example.com/demo2',
+                        githubLink: 'https://github.com/user/repo2'
+                    },
+                ],
+                appsP2R2: [
+                    {
+                        title: 'MemeAPI',
+                        backgroundImage: 'https://example.com/image1.jpg',
+                        description: 'This is the description for App 1.',
+                        demoLink: 'https://example.com/demo1',
+                        githubLink: 'https://github.com/user/repo1'
+                    }
                 ]
             };
         },

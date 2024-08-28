@@ -1,6 +1,6 @@
 <template>
     <div
-      class="flex flex-col justify-center items-center gap-2"
+      class="flex flex-col justify-center items-center gap-2 cursor-pointer hover:scale-105 transition-all"
       @click="openModal"
     >
       <div
