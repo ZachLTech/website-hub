@@ -10,8 +10,8 @@
                 <div class="flex flex-col gap-5">
                     <div class="w-full h-[2px] bg-slate-600 bg-opacity-50"></div>
                     <div class="flex gap-4">
-                        <a :href="demoLink" target="_blank" class="px-4 py-2 text-xl bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl">Take a look</a>
-                        <a :href="githubLink" target="_blank" class="px-4 py-2 text-xl bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-xl">Source</a>
+                        <a :href="demoLink" :style="{ display: displayDemoButton }" target="_blank" class="px-4 py-2 text-xl bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl">Take a look</a>
+                        <a :href="githubLink" :style="{ display: displaySourceButton }" target="_blank" class="px-4 py-2 text-xl bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-xl">Source</a>
                     </div>
                 </div>
             </div>
@@ -41,11 +41,19 @@
             },
             githubLink: {
                 type: String,
-                required: true
+                required: false
             },
             sideImage: {
                 type: String,
                 required: true
+            },
+            displayDemoButton: {
+                type: String,
+                required: false,
+            },
+            displaySourceButton: {
+                type: String,
+                required: false
             }
         },
         methods: {
