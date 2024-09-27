@@ -100,10 +100,11 @@
         {
             title: 'Thandi',
             backgroundImage: '/icons/thandi.jpg',
-            description: 'A self-taught full-stack developer who I partner up with for various projects and Hackathons',
+            description: 'A self-taught full-stack developer who I partner up with for various projects and Hackathons. HIS WEBSITE IS CURRENTLY DOWN',
             demoLink: 'https://str1ke.codes',
             githubLink: 'https://github.com/RealStr1ke',
             borderRadius: '100%',
+            displayDemoButton: 'none',
             sideImage: '/images/thandi-side.png',
         },
         {
@@ -116,14 +117,13 @@
             sideImage: '/images/amarnath-side.png',
         },
         {
-            title: 'Jossaya',
-            backgroundImage: '/icons/jossaya.webp',
-            description: 'Jossaya is a great guy who\'s typically ready to jump head first into any coding project',
-            demoLink: 'https://jcamille.tech',
-            githubLink: 'https://github.com/jcamille2023',
+            title: 'Resume PDF',
+            backgroundImage: '/icons/resume.png',
+            description: 'My Resume in PDF format :)',
+            demoLink: 'https://resume-pdf.zachl.tech',
             borderRadius: '100%',
             displaySourceButton: 'none',
-            sideImage: '/images/jossaya-side.png',
+            sideImage: '/images/resume-side.png',
         },
     ])
 
@@ -135,7 +135,6 @@
             demoLink: 'https://makaip.com',
             githubLink: 'https://github.com/makaip',
             borderRadius: '100%',
-            displaySourceButton: 'none',
             sideImage: '/images/makai-side.png',
         },
         {
@@ -145,7 +144,6 @@
             demoLink: 'https://www.alexcastronovo.com/',
             githubLink: 'https://github.com/AlexanderJCS?',
             borderRadius: '100%',
-            displaySourceButton: 'none',
             sideImage: '/images/alex-side.png',
         },
         {
@@ -182,7 +180,17 @@
             sideImage: '/images/raidowl-side.jpg',
         },
     ])
-
+    const appsP2R2 = reactive([
+        {
+            title: 'Jossaya',
+            backgroundImage: '/icons/jossaya.webp',
+            description: 'Jossaya is a great guy who\'s typically ready to jump head first into any coding project',
+            demoLink: 'https://jcamille.tech',
+            githubLink: 'https://github.com/jcamille2023',
+            borderRadius: '100%',
+            sideImage: '/images/jossaya-side.png',
+        },
+    ])
 
     const onSwiper = (swiper) => {
         console.log(swiper)
@@ -204,6 +212,11 @@
 
     const openModalP2R1 = (title) => {
         selectedApp.value = appsP2R1.find(app => app.title === title)
+        showModal.value = true
+    }
+
+    const openModalP2R2 = (title) => {
+        selectedApp.value = appsP2R2.find(app => app.title === title)
         showModal.value = true
     }
 
@@ -354,6 +367,16 @@ _|_ _|_|  _|  _|  _|_ _|_|
                                 :backgroundImage="app.backgroundImage"
                                 :borderRadius="app.borderRadius"
                                 @open-modal="openModalP2R1"
+                            />
+                        </div>
+                        <div class="flex flex-wrap justify-between">
+                            <AppButton
+                                v-for="(app, index) in appsP2R2"
+                                :key="index"
+                                :title="app.title"
+                                :backgroundImage="app.backgroundImage"
+                                :borderRadius="app.borderRadius"
+                                @open-modal="openModalP2R2"
                             />
                         </div>
                     </div>
