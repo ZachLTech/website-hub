@@ -25,7 +25,7 @@
             description: `SSHfolio is a modular TUI (Text User Interface) portfolio application based on the Bubble Tea framework. This project allows you to showcase your portfolio in a terminal environment, providing a unique way to present your projects, biography, contact information, and more. It's designed to be easily customizable and self-hostable using Docker. I originally made this for personal use as my own SSH portfolio, but have since made it open source and modular so anyone can recreate their own SSHfolio adding their projects, experience, about me, etc.`,
             demoLink: 'https://github.com/ZachLTech/sshfolio',
             githubLink: 'https://github.com/ZachLTech/sshfolio', 
-            sideImage: '/aside_pictures/sshfolio.png',
+            sideImage: '/images/sshfolio.png',
             displayDemoButton: 'none'
         },
         {
@@ -34,7 +34,7 @@
             description: 'Bentofolio is my personal portfolio project that showcases my skills and expertise through a bento grid-style layout. Built using Nuxt.js and TailwindCSS, it offers an interactive and visually appealing interface. The project also includes SwiperJS for smooth navigation and integrates GitHub readme stats for dynamic data visualization.',
             demoLink: 'https://bentofolio.zachl.tech',
             githubLink: 'https://github.com/ZachLTech/bentofolio',
-            sideImage: '/aside_pictures/bentofolio-side.png',
+            sideImage: '/images/bentofolio-side.png',
         },
         {
             title: 'AEV-Software',
@@ -42,7 +42,7 @@
             description: 'The Alset Solar Cybersedan Software is a comprehensive full-stack ecosystem developed for the FAUHS AEV solar car, enabling seamless integration and operation of various hardware components such as the Thunderstruck BMS, cameras, GPS module, and custom sound horn. This project was undertaken as part of the Advanced Experimental Vehicles program at FAU High School.',
             demoLink: 'https://aev.zachl.tech/',
             githubLink: 'https://github.com/YamanDevelopment/AEV-Software',
-            sideImage: '/aside_pictures/alset-side.png',
+            sideImage: '/images/alset-side.png',
         },
         {
             title: 'Devfolify',
@@ -51,7 +51,7 @@
             Now the main premise and idea behind this app, although not fully built yet, is that people will be able to make these challenges or post ones themselves for others to participate in. Somewhat like a mini hackathon but on everyones own time and with a public leaderboard, individual stats, a place to discover other peoples projects, and even maybe a section with coding articles from daily.dev. But not only that, it encourages people to instead of just building a premade project, find a solution to a real world issue with creativity and code.`,
             demoLink: 'https://devfolify.com',
             githubLink: 'https://github.com/YamanDevelopment/Devfolify',
-            sideImage: '/aside_pictures/devfolify-side.png',
+            sideImage: '/images/devfolify-side.png',
         },
         {
             title: 'Schedulix',
@@ -60,7 +60,7 @@
             demoLink: 'https://schedulixfedemo.zachl.tech/',
             githubLink: 'https://github.com/YamanDevelopment/Schedulix',
             borderRadius: '25%',
-            sideImage: '/aside_pictures/schedulix-side.png',
+            sideImage: '/images/schedulix-side.png',
         },
         {
             title: 'WebDevDocs',
@@ -68,7 +68,7 @@
             description: 'Welcome to the no-nonsense web development "course" meant to help guide you to learn web development and coding in JS the right way, with basic instruction and explaination followed by practice/mini project based experimenting on your end. 🌐💻',
             demoLink: 'https://webdev.zachl.tech/',
             githubLink: 'https://github.com/ZachLTech/webdevcourse',
-            sideImage: '/aside_pictures/webdevdocs-side.png',
+            sideImage: '/images/webdevdocs-side.png',
         },
     ])
 
@@ -79,7 +79,7 @@
             description: `Just a funny API with elysiajs because bun is cool and I had this idea a while ago for fun 😀`,
             demoLink: 'https://memes.zachl.tech/',
             githubLink: 'https://github.com/ZachLTech/RandomMemeRestAPI',
-            sideImage: '/aside_pictures/memeapi-side.png',
+            sideImage: '/images/memeapi-side.png',
         },
         {
             title: 'Fileshare',
@@ -87,7 +87,7 @@
             description: 'A service I self host which is used as a replacement to apps like dropbox. The convenience of having my own filesharing service is so nice',
             demoLink: 'https://share.zachl.tech/',
             displaySourceButton: 'none',
-            sideImage: '/aside_pictures/fileshare-side.png',
+            sideImage: '/images/fileshare-side.png',
         },
         {
             title: 'SearXNG',
@@ -95,7 +95,7 @@
             description: 'A service I self host which is used as a better and more private search engine to replace duckduckgo, google, etc.. Why use Google or DuckDuckGo when you can use a combination of them all, AND keep your data private!!',
             demoLink: 'https://search.zachl.tech',
             displaySourceButton: 'none',
-            sideImage: '/aside_pictures/searxng-side.png',
+            sideImage: '/images/searxng-side.png',
         },
         {
             title: 'Thandi',
@@ -104,7 +104,7 @@
             demoLink: 'https://str1ke.codes',
             githubLink: 'https://github.com/RealStr1ke',
             borderRadius: '100%',
-            sideImage: '/aside_pictures/thandi-side.png',
+            sideImage: '/images/thandi-side.png',
         },
         {
             title: 'Amarnath',
@@ -113,7 +113,7 @@
             demoLink: 'https://jeebuscrossaint.github.io/',
             githubLink: 'https://github.com/jeebuscrossaint',
             borderRadius: '100%',
-            sideImage: '/aside_pictures/amarnath-side.png',
+            sideImage: '/images/amarnath-side.png',
         },
         {
             title: 'Jossaya',
@@ -123,7 +123,7 @@
             githubLink: 'https://github.com/jcamille2023',
             borderRadius: '100%',
             displaySourceButton: 'none',
-            sideImage: '/aside_pictures/jossaya-side.png',
+            sideImage: '/images/jossaya-side.png',
         },
     ])
 
@@ -136,7 +136,7 @@
             githubLink: 'https://github.com/makaip',
             borderRadius: '100%',
             displaySourceButton: 'none',
-            sideImage: '/aside_pictures/makai-side.png',
+            sideImage: '/images/makai-side.png',
         },
         {
             title: 'Alex',
@@ -146,7 +146,7 @@
             githubLink: 'https://github.com/AlexanderJCS?',
             borderRadius: '100%',
             displaySourceButton: 'none',
-            sideImage: '/aside_pictures/alex-side.png',
+            sideImage: '/images/alex-side.png',
         },
         {
             title: 'Network Chuck',
@@ -154,7 +154,7 @@
             description: 'His tutorials and educational videos are so great and he was the reason I tried Linux for the first time',
             demoLink: 'https://www.youtube.com/@NetworkChuck',
             displaySourceButton: 'none',
-            sideImage: '/aside_pictures/networkchuck-side.jpg',
+            sideImage: '/images/networkchuck-side.jpg',
         },
         {
             title: 'Fireship',
@@ -162,7 +162,7 @@
             description: 'The entertainment & education combo in Fireships videos are simply unmatched and I tend to get a lot of my tech news from him now',
             demoLink: 'https://www.youtube.com/@Fireship',
             displaySourceButton: 'none',
-            sideImage: '/aside_pictures/fireship-side.jpg',
+            sideImage: '/images/fireship-side.jpg',
         },
         {
             title: 'Frying Pan',
@@ -170,7 +170,7 @@
             description: 'Frying Pans skits and journey helped inspire me to continue in CS alongside attempting a startup',
             demoLink: 'https://www.youtube.com/@FryingPan',
             displaySourceButton: 'none',
-            sideImage: '/aside_pictures/fryingpan-side.png',
+            sideImage: '/images/fryingpan-side.png',
         },
         {
             title: 'Raid Owl',
@@ -179,7 +179,7 @@
             demoLink: 'https://www.youtube.com/@RaidOwl',
             borderRadius: '100%',
             displaySourceButton: 'none',
-            sideImage: '/aside_pictures/raidowl-side.jpg',
+            sideImage: '/images/raidowl-side.jpg',
         },
     ])
 
