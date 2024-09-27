@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxtjs/seo": "^2.0.0-rc.21",
     "nuxt": "^3.11.2",
+    "nuxt-viewport": "^2.1.6",
     "swiper": "^11.1.9",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"

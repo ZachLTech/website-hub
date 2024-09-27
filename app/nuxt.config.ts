@@ -10,8 +10,14 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/device', "@nuxtjs/seo"],
+  modules: ["@nuxtjs/seo", 'nuxt-viewport'],
 
+  build: {
+    transpile: ['swiper']
+  },
+  buildModules: [
+    '@vueuse/nuxt',
+  ],
   site: {
     url: 'https://sites.zachl.space',
     name: 'ZachLTech\'s Sitemap',
