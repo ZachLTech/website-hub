@@ -23,10 +23,9 @@
             title: 'SSHfolio',
             backgroundImage: '/icons/sshfolio-icon.png',
             description: `SSHfolio is a modular TUI (Text User Interface) portfolio application based on the Bubble Tea framework. This project allows you to showcase your portfolio in a terminal environment, providing a unique way to present your projects, biography, contact information, and more. It's designed to be easily customizable and self-hostable using Docker. I originally made this for personal use as my own SSH portfolio, but have since made it open source and modular so anyone can recreate their own SSHfolio adding their projects, experience, about me, etc.`,
-            demoLink: 'https://github.com/ZachLTech/sshfolio',
+            demoLink: 'https://sshfolio.zachl.tech',
             githubLink: 'https://github.com/ZachLTech/sshfolio', 
-            sideImage: '/images/sshfolio.png',
-            displayDemoButton: 'none'
+            sideImage: '/images/sshfolio.png'
         },
         {
             title: 'Bentofolio',
@@ -100,17 +99,16 @@
         {
             title: 'Thandi',
             backgroundImage: '/icons/thandi.jpg',
-            description: 'A self-taught full-stack developer who I partner up with for various projects and Hackathons. HIS WEBSITE IS CURRENTLY DOWN',
-            demoLink: 'https://str1ke.codes',
+            description: 'A close friend of mine who is also a self-taught full-stack developer who I partner up with for various projects and Hackathons. Also he LOVES object oriented programming.',
+            demoLink: 'https://str1ke.co',
             githubLink: 'https://github.com/RealStr1ke',
             borderRadius: '100%',
-            displayDemoButton: 'none',
             sideImage: '/images/thandi-side.png',
         },
         {
             title: 'Amarnath',
             backgroundImage: '/icons/amarnath.png',
-            description: 'Another close friend of mine who took up programming due to his interest in the science behind computers',
+            description: 'Another close friend of mine who took up programming due to his interest in the science behind computers. One of the most GNU loving OS discovering people I know.',
             demoLink: 'https://jeebuscrossaint.github.io/',
             githubLink: 'https://github.com/jeebuscrossaint',
             borderRadius: '100%',
@@ -185,10 +183,56 @@
             title: 'Jossaya',
             backgroundImage: '/icons/jossaya.webp',
             description: 'Jossaya is a great guy who\'s typically ready to jump head first into any coding project',
-            demoLink: 'https://jcamille.tech',
+            demoLink: 'https://jcamille2023.github.io',
             githubLink: 'https://github.com/jcamille2023',
             borderRadius: '100%',
             sideImage: '/images/jossaya-side.png',
+        },
+        {
+            title: 'eXit',
+            backgroundImage: '/icons/eXit.png',
+            description: 'A really cool project I\'ve been wanting to work on for a long time and finally had the time to do so. It\'s a recreation of the game eXit as seen in the television series Mr. Robot in season 4 episode 11, served through an actual terminal via SSH.',
+            demoLink: 'https://www.youtube.com/watch?v=JvAe32b_zPo',
+            githubLink: 'https://github.com/ZachLTech/eXit',
+            borderRadius: '100%',
+            sideImage: '/images/eXit-side.png',
+        },
+        {
+            title: 'Ansify',
+            backgroundImage: '/icons/ansify.png',
+            description: 'Ansify is a really cool little package I made for Go which simply turns any image into a string of special color coded ANSI blocks which replicate the image but in an appealing way compatible with almost every terminal. The goal of this package was so others could use this as opposed to ASCII image converters since visually, ASCII converted images are very hard to view and interpret- they typically don\'t look anything like the original image. This solves that problem and is now the driving feature behind some other open source projects such as my eXit game, a TUI game engine which I plan to release soon, and another project called YouTerm which serves youtube videos in any terminal.',
+            demoLink: 'https://www.youtube.com/watch?v=MdfJ8mXeNyQ',
+            githubLink: 'https://github.com/ZachLTech/ansify',
+            borderRadius: '20%',
+            sideImage: '/images/ansify-side.png',
+        },
+        {
+            title: 'Accessh',
+            backgroundImage: '/icons/accessh.png',
+            description: 'So I plan on making a whole library of SSH based apps and services because why not and I love SSH based things. But to organize all of that, I need a way for people to find their way to my SSH services or at least a catalogue of all the public places they can SSH into in my infrastructure. For this, I made Accessh which is simply a dialogue and when the user inputs the domain name of the service they\'re trying to go to, it shows them how excatly to get there and what port its on (also if the user types help it shows all the public services).',
+            demoLink: 'https://jcamille2023.github.io',
+            githubLink: 'https://github.com/ZachLTech/Accessh',
+            borderRadius: '20%',
+            sideImage: '/images/accessh-side.png',
+            displayDemoButton: 'none',
+        },
+        {
+            title: 'Fireshare',
+            backgroundImage: '/icons/fireshare.png',
+            description: 'Just a service I host based on an open source project. It\'s a part of my homelab so I can share videos with people that I don\'t wanna upload to youtube.',
+            demoLink: 'https://fireshare.zachl.tech',
+            githubLink: 'https://github.com/ShaneIsrael/fireshare',
+            borderRadius: '100%',
+            sideImage: '/images/fireshare-side.png',
+        },
+        {
+            title: '404',
+            backgroundImage: '/icons/404.jpg',
+            description: 'Nothing to see here... Just a 404 page for my sites...',
+            demoLink: 'https://404.zachl.tech',
+            githubLink: 'https://github.com/ZachLTech/404',
+            borderRadius: '20%',
+            sideImage: '/images/404-side.png',
         },
     ])
 
@@ -273,7 +317,7 @@
                 <div class="w-[45%] h-[1px] bg-white"></div>
             </div> 
             <section class="p-4 bg-black h-[50vh] w-screen flex justify-center sm:justify-start items-end poppins">
-                <a href="">
+                <a href="https://404.zachl.tech">
                     <pre class="font-mono text-md leading-none select-none">
 _|  _|      _|    _|  _|   
 _|  _|    _|  _|  _|  _|   

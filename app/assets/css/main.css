@@ -8,7 +8,6 @@ body{
 
 *{
     color: #c3c3c3;
-    user-select: none;
 }
 
 ::-webkit-scrollbar {

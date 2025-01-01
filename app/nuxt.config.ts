@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   ],
   site: {
     url: 'https://sites.zachl.space',
-    name: 'ZachLTech\'s Sitemap',
+    name: 'ZachLTech - Website Hub',
     description: 'My hub containing some of my websites, friends websites, and more!',
     defaultLocale: 'en',
   },
