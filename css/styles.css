@@ -1,0 +1,20 @@
+/* Custom styles to complement Tailwind CSS */
+
+.website-card {
+    transition: transform 0.2s;
+}
+
+.website-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Animation for modal */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#add-site-modal.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-out;
+}

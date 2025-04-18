@@ -1,10 +1,10 @@
-version: '3.3'
+version: '3'
+
 services:
-  zachltech_site_hub:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: site-website-hub
-    restart: unless-stopped
+  website:
+    build: .
     ports:
-      - 9795:3000
+      - "${PORT}:${PORT}"
+    environment:
+      - PORT=${PORT}
+    restart: unless-stopped

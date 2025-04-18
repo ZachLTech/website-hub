@@ -1,0 +1,60 @@
+[
+    {
+        "title": "SSHfolio",
+        "description": "A terminal-based portfolio website that simulates a Linux environment. Navigate through projects with SSH-like commands.",
+        "tags": ["HTML", "CSS", "JavaScript", "Terminal"],
+        "status": "Active",
+        "links": {
+            "live": "https://sshfolio.zachl.tech",
+            "github": "https://github.com/ZachLTech/sshfolio"
+        }
+    },
+    {
+        "title": "DevFolify",
+        "description": "A developer portfolio generator that creates beautiful, responsive websites from a simple configuration file.",
+        "tags": ["React", "Tailwind CSS", "Node.js"],
+        "status": "Development",
+        "links": {
+            "live": "https://devfolify.zachl.tech",
+            "github": "https://github.com/ZachLTech/devfolify"
+        }
+    },
+    {
+        "title": "Schedulix",
+        "description": "An intelligent scheduling application that optimizes your daily routine based on your productivity patterns.",
+        "tags": ["Vue.js", "Firebase", "Machine Learning"],
+        "status": "Active",
+        "links": {
+            "live": "https://schedulix.zachl.tech",
+            "github": "https://github.com/ZachLTech/schedulix"
+        }
+    },
+    {
+        "title": "EduQuest",
+        "description": "An interactive learning platform with gamification elements to make education more engaging for students.",
+        "tags": ["React", "MongoDB", "Express", "Node.js"],
+        "status": "Development",
+        "links": {
+            "github": "https://github.com/ZachLTech/eduquest"
+        }
+    },
+    {
+        "title": "CodeSync",
+        "description": "Real-time collaborative code editor with syntax highlighting and instant preview for web development.",
+        "tags": ["WebSockets", "JavaScript", "CodeMirror"],
+        "status": "Active",
+        "links": {
+            "live": "https://codesync.zachl.tech",
+            "github": "https://github.com/ZachLTech/codesync"
+        }
+    },
+    {
+        "title": "DataVizPro",
+        "description": "Advanced data visualization tool that transforms complex datasets into intuitive, interactive charts and graphs.",
+        "tags": ["D3.js", "React", "Python", "Data Science"],
+        "status": "Development",
+        "links": {
+            "github": "https://github.com/ZachLTech/datavizpro"
+        }
+    }
+]

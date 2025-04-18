@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the landing page for Zach's personal web. Made by Zach :)">
+        <meta name="keywords" content="keyword1, keyword2, keyword3, ZachLTech, landing, zach, zachltech, zachl, zachary, lopez, personal, web, website, zachl.tech, sshfolio, devfolify, schedulix, eduquest">
+        <meta name="author" content="Zachary Lopez - ZachLTech">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="en">
+        <meta name="theme-color" content="#FF0000">
+        <meta property="og:title" content="ZachLTech - Landing">
+        <meta property="og:description" content="This is the landing page for Zach's personal web. Made by Zach :)">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://zachl.tech">
+        <meta property="og:image" content="./assets/myLogo.png">
+        <meta property="og:site_name" content="ZachLTech's Personal Web Landing Page">
+        <meta property="og:locale" content="en_US">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="ZachLTech - Landing">
+        <meta name="twitter:description" content="This is the landing page for Zach's personal web. Made by Zach :)">
+        <meta name="twitter:image" content="./assets/myLogo.png">
+        <link rel="canonical" href="https://zachl.tech">
+        <title>ZachLTech - Website Hub</title>
+        <script src="https://kit.fontawesome.com/070428bd88.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/0daa30b3d0.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script defer data-domain="zachl.tech" src="https://analytics.zachl.tech/js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-black bg-cover font-mono min-h-screen flex flex-col">
+        <div class="binary-background select-none fixed opacity-[0.05] text-center break-all text-[7vh] sm:text-[6vw] font-mono w-full leading-none text-[#999] z-0">01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000</div>
+        
+        <main class="flex-grow flex flex-col justify-center items-center p-4 z-10">
+            <div class="terminal-container w-full max-w-5xl mx-auto">
+                <!-- Header Section -->
+                <div class="terminal-header p-4 rounded-t-lg border border-gray-700">
+                    <h1 class="text-center text-gray-300 text-sm md:text-lg">hi (zachary lopez - software developer)</h1>
+                </div>
+                
+                <!-- Tab Navigation -->
+                <div class="terminal-tabs border-x border-gray-700 bg-black">
+                    <div class="flex justify-between text-sm sm:text-base md:text-lg">
+                        <button class="tab-button active py-4 px-4 flex-1 text-center" data-tab="projects">Projects</button>
+                        <button class="tab-button py-4 px-4 flex-1 text-center" data-tab="work">My Work</button>
+                        <button class="tab-button py-4 px-4 flex-1 text-center" data-tab="self-hosted">Self Hosted</button>
+                        <button class="tab-button py-4 px-4 flex-1 text-center" data-tab="friends">Tech Friends</button>
+                    </div>
+                    <hr class="border-gray-700">
+                </div>
+                
+                <!-- Content Area -->
+                <div class="terminal-content p-4 md:p-6 bg-black rounded-b-lg border-x border-b border-gray-700 min-h-[60vh]">
+                    <!-- Projects Tab (Default Active) -->
+                    <div class="tab-content active" id="projects-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="projects-container">
+                            <!-- Cards will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Work Tab -->
+                    <div class="tab-content hidden" id="work-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="work-container">
+                            <!-- Work items will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Self Hosted Tab -->
+                    <div class="tab-content hidden" id="self-hosted-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="self-hosted-container">
+                            <!-- Self hosted items will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Tech Friends Tab -->
+                    <div class="tab-content hidden" id="friends-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="friends-container">
+                            <!-- Friends items will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Social Links fixed at bottom -->
+        <div class="w-full py-6 text-center z-10 mt-auto">
+            <div class="flex justify-center space-x-6 items-center text-gray-400">
+                <a href="https://github.com/ZachLTech" target="_blank" class="text-2xl md:text-3xl hover:text-white transition-colors">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/zacharylopeztech" target="_blank" class="text-2xl md:text-3xl hover:text-[#2069c9] transition-colors">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:zlopezzl2021@gmail.com" target="_blank" class="text-2xl md:text-3xl hover:text-red-400 transition-colors">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://discord.com/users/829875896864866314" target="_blank" class="text-2xl md:text-3xl hover:text-[#738ADB] transition-colors">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://www.instagram.com/playpxco/" target="_blank" class="text-2xl md:text-3xl hover:text-[#e6683c] transition-colors">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <a href="./old/index.html" class="absolute text-gray-400 bottom-5 right-5 text-sm md:text-lg z-50">Old Site</a>
+        
+        <script src="scripts.js"></script>
+    </body>
+</html>
