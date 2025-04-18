@@ -22,13 +22,49 @@ html, body {
 
 /* Terminal container styles */
 .terminal-container {
-    box-shadow: 0 0 30px rgba(10, 255, 10, 0.05);
+    box-shadow: none;
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
 }
 
+/* Modern title styles */
+.title-container {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.title-container h1 {
+    letter-spacing: 2px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.title-container h1::after {
+    content: '';
+    display: none;
+}
+
+/* Remove the quote container styling */
+.quote-container {
+    /* Remove all styling properties */
+}
+
+/* Terminal header styles */
 .terminal-header {
     background-color: #0a0a0a;
     border-bottom: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    position: relative;
+}
+
+/* Remove the dots in the terminal header by removing the ::before pseudo-element */
+.terminal-header::before {
+    content: none;
 }
 
 /* Tab styles */
@@ -66,6 +102,16 @@ html, body {
     animation: fadeIn 0.5s ease forwards;
 }
 
+.terminal-content {
+    min-height: 70vh;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
 /* Card styles */
 .card {
     background: #0a0a0a;
@@ -77,12 +123,23 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .card:hover {
     border-color: #2f2f2f;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background: #0f0f0f;
+}
+
+.card:hover .card-title {
+    color: #3B82F6;
+}
+
+/* Remove the link indicator */
+.card-link-indicator {
+    display: none;
 }
 
 .card-content {
@@ -101,25 +158,33 @@ html, body {
 .card-description {
     font-size: 0.9rem;
     color: #888888;
-    margin-bottom: 1.25rem;
     line-height: 1.5;
     flex-grow: 1;
+    margin-bottom: 1.5rem; /* Add margin to ensure space for tags */
 }
 
+/* Tag styles - position at bottom of card */
 .card-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-top: auto; /* Push to bottom of flex container */
 }
 
+/* Remove card-links styles since we're not using them anymore */
+.card-links {
+    display: none;
+}
+
+/* Tag styles - update to add more padding and rounded corners */
 .tag {
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
+    padding: 0.2rem 0.8rem; /* Increased horizontal padding */
+    border-radius: 12px; /* More rounded corners */
     font-size: 0.7rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    margin-bottom: 0.25rem; /* Add some bottom margin for multi-row tags */
 }
 
 /* Tag colors */
@@ -256,12 +321,6 @@ html, body {
 }
 
 /* Card link styles */
-.card-links {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
 .card-link {
     padding: 0.4rem 0.8rem;
     border-radius: 4px;
@@ -299,6 +358,12 @@ html, body {
     animation: fadeIn 0.6s ease-out forwards;
 }
 
+/* Remove color changing animation */
+.text-transparent.bg-clip-text.bg-gradient-to-r {
+    background-size: unset;
+    animation: none;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .terminal-tabs .flex {
@@ -332,5 +397,25 @@ html, body {
     .card-link {
         padding: 0.3rem 0.6rem;
         font-size: 0.7rem;
+    }
+}
+
+/* Additional responsive styles */
+@media screen and (min-width: 1200px) {
+    .terminal-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    main {
+        padding: 0 !important;
+    }
+    
+    .terminal-content,
+    .terminal-header,
+    .terminal-tabs {
+        border-left: none;
+        border-right: none;
     }
 }

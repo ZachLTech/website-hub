@@ -25,16 +25,18 @@ async function loadProjects() {
         const response = await fetch('config.json');
         const projects = await response.json();
         
-        // Create mock data for other tabs
-        const workProjects = projects.slice(0, 3); // First 3 projects for Work tab
-        const selfHostedProjects = projects.slice(2, 5); // Projects 3-5 for Self Hosted tab
-        const friendsProjects = projects.slice(1, 4); // Projects 2-4 for Friends tab
+        // Group projects by section
+        const projectsBySection = projects.reduce((acc, project) => {
+            const section = project.section || 'projects'; // Default to projects if no section specified
+            if (!acc[section]) acc[section] = [];
+            acc[section].push(project);
+            return acc;
+        }, {});
         
-        // Load data for each tab
-        displayProjects(projects, 'projects');
-        displayProjects(workProjects, 'work');
-        displayProjects(selfHostedProjects, 'self-hosted');
-        displayProjects(friendsProjects, 'friends');
+        // Display projects for each section
+        Object.keys(projectsBySection).forEach(section => {
+            displayProjects(projectsBySection[section], section);
+        });
         
     } catch (error) {
         console.error('Error loading projects:', error);
@@ -65,8 +67,15 @@ function displayProjects(projects, containerId) {
 // Create a card element from project data
 function createCard(project, delay) {
     const card = document.createElement('div');
-    card.className = 'card fade-in';
+    card.className = 'card fade-in cursor-pointer';
     card.style.animationDelay = `${delay}ms`;
+    
+    // Make the entire card clickable
+    card.addEventListener('click', () => {
+        if (project.link) {
+            window.open(project.link, '_blank');
+        }
+    });
     
     // Create status indicator if provided
     let statusHtml = '';
@@ -86,33 +95,12 @@ function createCard(project, delay) {
         tagsHtml += '</div>';
     }
     
-    // Create links
-    let linksHtml = '';
-    if (project.links) {
-        linksHtml = '<div class="card-links">';
-        
-        if (project.links.live) {
-            linksHtml += `<a href="${project.links.live}" target="_blank" class="card-link link-live">
-                <i class="fas fa-external-link-alt"></i> Live
-            </a>`;
-        }
-        
-        if (project.links.github) {
-            linksHtml += `<a href="${project.links.github}" target="_blank" class="card-link link-github">
-                <i class="fab fa-github"></i> GitHub
-            </a>`;
-        }
-        
-        linksHtml += '</div>';
-    }
-    
     card.innerHTML = `
         ${statusHtml}
         <div class="card-content">
             <h3 class="card-title">${project.title}</h3>
             <p class="card-description">${project.description}</p>
             ${tagsHtml}
-            ${linksHtml}
         </div>
     `;
     

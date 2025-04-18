@@ -36,26 +36,42 @@
     <body class="bg-black bg-cover font-mono min-h-screen flex flex-col">
         <div class="binary-background select-none fixed opacity-[0.05] text-center break-all text-[7vh] sm:text-[6vw] font-mono w-full leading-none text-[#999] z-0">01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000</div>
         
-        <main class="flex-grow flex flex-col justify-center items-center p-4 z-10">
-            <div class="terminal-container w-full max-w-5xl mx-auto">
-                <!-- Header Section -->
-                <div class="terminal-header p-4 rounded-t-lg border border-gray-700">
-                    <h1 class="text-center text-gray-300 text-sm md:text-lg">hi (zachary lopez - software developer)</h1>
+        <main class="flex-grow flex flex-col justify-center items-center w-full p-0 z-10">
+            <div class="terminal-container w-full">
+                <!-- Updated Header Section -->
+                <div class="terminal-header p-8 border-0">
+                    <div class="title-container text-center">
+                        <h1 class="text-3xl md:text-5xl text-white font-bold mb-3">WELCOME TO MY LINK HUB</h1>
+                        
+                        <p class="text-gray-300 mt-3 mb-6 text-sm md:text-base max-w-2xl mx-auto">
+                            Explore some of my projects and things I've done before
+                        </p>
+                        
+                        <div class="flex items-center justify-center mb-6">
+                            <div class="h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent w-full max-w-md"></div>
+                        </div>
+                        
+                        <div class="py-2 px-4">
+                            <p class="text-gray-400 text-sm md:text-base italic">
+                                "Whatever you do, work at it with all your heart"
+                                <span class="text-gray-500 block mt-1 text-xs md:text-sm">— Colossians 3:23</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Tab Navigation -->
-                <div class="terminal-tabs border-x border-gray-700 bg-black">
+                <div class="terminal-tabs border-0 border-y border-gray-700 bg-black">
                     <div class="flex justify-between text-sm sm:text-base md:text-lg">
                         <button class="tab-button active py-4 px-4 flex-1 text-center" data-tab="projects">Projects</button>
                         <button class="tab-button py-4 px-4 flex-1 text-center" data-tab="work">My Work</button>
                         <button class="tab-button py-4 px-4 flex-1 text-center" data-tab="self-hosted">Self Hosted</button>
                         <button class="tab-button py-4 px-4 flex-1 text-center" data-tab="friends">Tech Friends</button>
                     </div>
-                    <hr class="border-gray-700">
                 </div>
                 
                 <!-- Content Area -->
-                <div class="terminal-content p-4 md:p-6 bg-black rounded-b-lg border-x border-b border-gray-700 min-h-[60vh]">
+                <div class="terminal-content p-4 md:p-6 bg-black">
                     <!-- Projects Tab (Default Active) -->
                     <div class="tab-content active" id="projects-content">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="projects-container">
@@ -93,7 +109,7 @@
                 <a href="https://github.com/ZachLTech" target="_blank" class="text-2xl md:text-3xl hover:text-white transition-colors">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/zacharylopeztech" target="_blank" class="text-2xl md:text-3xl hover:text-[#2069c9] transition-colors">
+                <a href="https://www.linkedin.com/in/zachary-lopez-304629243/" target="_blank" class="text-2xl md:text-3xl hover:text-[#2069c9] transition-colors">
                     <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="mailto:zlopezzl2021@gmail.com" target="_blank" class="text-2xl md:text-3xl hover:text-red-400 transition-colors">
@@ -108,7 +124,6 @@
             </div>
         </div>
         
-        <a href="./old/index.html" class="absolute text-gray-400 bottom-5 right-5 text-sm md:text-lg z-50">Old Site</a>
         
         <script src="scripts.js"></script>
     </body>

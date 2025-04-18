@@ -1,60 +1,162 @@
 [
     {
         "title": "SSHfolio",
-        "description": "A terminal-based portfolio website that simulates a Linux environment. Navigate through projects with SSH-like commands.",
-        "tags": ["HTML", "CSS", "JavaScript", "Terminal"],
+        "description": "SSHfolio is a modular TUI (Text User Interface) portfolio application based on the Bubble Tea framework. This project allows you to showcase your portfolio in a terminal environment, providing a unique way to present your projects, biography, contact information, and more.",
+        "tags": ["Terminal", "Go", "TUI", "Portfolio"],
         "status": "Active",
-        "links": {
-            "live": "https://sshfolio.zachl.tech",
-            "github": "https://github.com/ZachLTech/sshfolio"
-        }
+        "link": "https://sshfolio.zachl.tech",
+        "section": "projects"
     },
     {
-        "title": "DevFolify",
-        "description": "A developer portfolio generator that creates beautiful, responsive websites from a simple configuration file.",
-        "tags": ["React", "Tailwind CSS", "Node.js"],
+        "title": "Bentofolio",
+        "description": "Bentofolio is my personal portfolio project that showcases my skills and expertise through a bento grid-style layout. Built using Nuxt.js and TailwindCSS, it offers an interactive and visually appealing interface.",
+        "tags": ["Nuxt.js", "TailwindCSS", "SwiperJS", "Portfolio"],
+        "status": "Active",
+        "link": "https://bentofolio.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "AEV-Software",
+        "description": "The Alset Solar Cybersedan Software is a comprehensive full-stack ecosystem developed for the FAUHS AEV solar car, enabling seamless integration and operation of various hardware components.",
+        "tags": ["Full-Stack", "IoT", "Hardware", "Solar"],
+        "status": "Active",
+        "link": "https://aev.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "Devfolify",
+        "description": "Devfolify is a full stack application designed to provide personalized coding challenges. Our goal is to move beyond the traditional lists of beginner or advanced projects and offer unique, skill-level tailored challenges.",
+        "tags": ["Full-Stack", "Education", "Challenges", "JavaScript"],
         "status": "Development",
-        "links": {
-            "live": "https://devfolify.zachl.tech",
-            "github": "https://github.com/ZachLTech/devfolify"
-        }
+        "link": "https://devfolify.com",
+        "section": "projects"
     },
     {
         "title": "Schedulix",
-        "description": "An intelligent scheduling application that optimizes your daily routine based on your productivity patterns.",
-        "tags": ["Vue.js", "Firebase", "Machine Learning"],
+        "description": "Schedulix is a program that helps university students develop their course schedules for their upcoming semester. It takes in the user's preferences and generates multiple schedules that fit the user's preferences.",
+        "tags": ["JavaScript", "Node.js", "Education", "Scheduling"],
         "status": "Active",
-        "links": {
-            "live": "https://schedulix.zachl.tech",
-            "github": "https://github.com/ZachLTech/schedulix"
-        }
+        "link": "https://schedulixfedemo.zachl.tech",
+        "section": "projects"
     },
     {
-        "title": "EduQuest",
-        "description": "An interactive learning platform with gamification elements to make education more engaging for students.",
-        "tags": ["React", "MongoDB", "Express", "Node.js"],
-        "status": "Development",
-        "links": {
-            "github": "https://github.com/ZachLTech/eduquest"
-        }
-    },
-    {
-        "title": "CodeSync",
-        "description": "Real-time collaborative code editor with syntax highlighting and instant preview for web development.",
-        "tags": ["WebSockets", "JavaScript", "CodeMirror"],
+        "title": "WebDevDocs",
+        "description": "A no-nonsense web development course meant to help guide learners to develop web applications the right way, with basic instruction and explanation followed by practice and mini project-based experimenting.",
+        "tags": ["Education", "Web Development", "Documentation", "HTML/CSS"],
         "status": "Active",
-        "links": {
-            "live": "https://codesync.zachl.tech",
-            "github": "https://github.com/ZachLTech/codesync"
-        }
+        "link": "https://webdev.zachl.tech",
+        "section": "projects"
     },
     {
-        "title": "DataVizPro",
-        "description": "Advanced data visualization tool that transforms complex datasets into intuitive, interactive charts and graphs.",
-        "tags": ["D3.js", "React", "Python", "Data Science"],
-        "status": "Development",
-        "links": {
-            "github": "https://github.com/ZachLTech/datavizpro"
-        }
+        "title": "MemeAPI",
+        "description": "A fun API built with ElysiaJS using Bun runtime that serves random memes and funny content.",
+        "tags": ["API", "ElysiaJS", "Bun", "JavaScript"],
+        "status": "Active",
+        "link": "https://memes.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "eXit",
+        "description": "A recreation of the game eXit as seen in the television series Mr. Robot in season 4 episode 11, served through an actual terminal via SSH.",
+        "tags": ["Terminal", "Game", "SSH", "Go"],
+        "status": "Active",
+        "link": "https://github.com/ZachLTech/eXit",
+        "section": "projects"
+    },
+    {
+        "title": "Ansify",
+        "description": "A Go package that turns any image into color-coded ANSI blocks for terminal display, solving the readability issues of traditional ASCII image converters.",
+        "tags": ["Go", "Terminal", "Graphics", "Library"],
+        "status": "Active",
+        "link": "https://github.com/ZachLTech/ansify",
+        "section": "projects"
+    },
+    {
+        "title": "Accessh",
+        "description": "An SSH-based directory of services and applications, providing navigation assistance to various SSH-accessible tools in my infrastructure.",
+        "tags": ["SSH", "Terminal", "Directory", "Infrastructure"],
+        "status": "Active",
+        "link": "https://github.com/ZachLTech/Accessh",
+        "section": "projects"
+    },
+    {
+        "title": "404",
+        "description": "A custom 404 page for my websites, adding a bit of personality to the error experience.",
+        "tags": ["Web", "Error Page", "HTML/CSS", "JavaScript"],
+        "status": "Active",
+        "link": "https://404.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "Fileshare",
+        "description": "A self-hosted file sharing service that serves as a replacement for cloud storage applications like Dropbox, providing convenient personal file management.",
+        "tags": ["Self-hosted", "Storage", "Files", "Cloud"],
+        "status": "Active",
+        "link": "https://share.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
+        "title": "SearXNG",
+        "description": "A self-hosted meta search engine that aggregates results from multiple sources while preserving privacy, serving as an alternative to commercial search engines.",
+        "tags": ["Search Engine", "Privacy", "Self-hosted", "Python"],
+        "status": "Active",
+        "link": "https://search.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
+        "title": "Fireshare",
+        "description": "A self-hosted service based on an open-source project that enables video sharing without relying on platforms like YouTube.",
+        "tags": ["Video", "Sharing", "Self-hosted", "Media"],
+        "status": "Active",
+        "link": "https://fireshare.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
+        "title": "Resume PDF",
+        "description": "My resume in PDF format, easily accessible online.",
+        "tags": ["Resume", "PDF", "Personal"],
+        "status": "Active",
+        "link": "https://resume-pdf.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
+        "title": "Thandi",
+        "description": "A close friend and self-taught full-stack developer who collaborates on various projects and hackathons. Particularly enthusiastic about object-oriented programming.",
+        "tags": ["Developer", "Full-Stack", "OOP", "Collaborator"],
+        "status": "Active",
+        "link": "https://str1ke.co",
+        "section": "friends"
+    },
+    {
+        "title": "Amarnath",
+        "description": "A friend who developed an interest in programming through computer science fundamentals. Known for exploring different operating systems and advocating for GNU/Linux.",
+        "tags": ["Developer", "GNU/Linux", "OS", "Computer Science"],
+        "status": "Active",
+        "link": "https://jeebuscrossaint.github.io",
+        "section": "friends"
+    },
+    {
+        "title": "Makai",
+        "description": "An enthusiastic friend with diverse interests including coding, Blender modeling, piano playing, and photography.",
+        "tags": ["Developer", "3D Modeling", "Music", "Photography"],
+        "status": "Active",
+        "link": "https://makaip.com",
+        "section": "friends"
+    },
+    {
+        "title": "Alex",
+        "description": "A research partner with extensive experience across various computer science fields.",
+        "tags": ["Research", "Computer Science", "Development", "Academic"],
+        "status": "Active",
+        "link": "https://www.alexcastronovo.com",
+        "section": "friends"
+    },
+    {
+        "title": "Jossaya",
+        "description": "A developer colleague known for enthusiasm and willingness to dive into new coding projects.",
+        "tags": ["Developer", "Enthusiast", "Collaborator", "Projects"],
+        "status": "Active",
+        "link": "https://jcamille2023.github.io",
+        "section": "friends"
     }
 ]
