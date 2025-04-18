@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  zachltech_site_hub:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: site-website-hub
+    restart: unless-stopped
+    ports:
+      - 9795:3000
