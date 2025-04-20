@@ -21,12 +21,13 @@
         <meta name="twitter:description" content="This is the landing page for Zach's personal web. Made by Zach :)">
         <meta name="twitter:image" content="./assets/myLogo.png">
         <link rel="canonical" href="https://zachl.tech">
-        <title>ZachLTech - Website Hub</title>
+        <title>ZachLTech - Link Hub</title>
         <script src="https://kit.fontawesome.com/070428bd88.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/0daa30b3d0.js" crossorigin="anonymous"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <script defer data-domain="zachl.tech" src="https://analytics.zachl.tech/js/script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="scripts.js" defer></script>
         <link rel="icon" type="image/x-icon" href="./favicon.ico">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,67 +35,74 @@
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body class="bg-black bg-cover font-mono min-h-screen flex flex-col">
-        <div class="binary-background select-none fixed opacity-[0.05] text-center break-all text-[7vh] sm:text-[6vw] font-mono w-full leading-none text-[#999] z-0">01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000</div>
+        <div class="select-none fixed opacity-[0.05] text-center break-all text-[7vh] sm:text-[6vw] font-mono w-full leading-none text-[#999] z-0">01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000</div>
         
-        <main class="flex-grow flex flex-col justify-center items-center w-full p-0 z-10">
-            <div class="terminal-container w-full">
+        <main class="flex-grow flex flex-col items-center w-full p-0 z-10">
+            <div class="w-full min-h-screen mx-auto rounded-lg overflow-hidden shadow-lg">
                 <!-- Updated Header Section -->
-                <div class="terminal-header p-8 border-0">
-                    <div class="title-container text-center">
+                <div class="p-8 border-0">
+                    <div class="w-full flex flex-col justify-center items-center text-center">
                         <h1 class="text-3xl md:text-5xl text-white font-bold mb-3">WELCOME TO MY LINK HUB</h1>
                         
-                        <p class="text-gray-300 mt-3 mb-6 text-sm md:text-base max-w-2xl mx-auto">
-                            Explore some of my projects and things I've done before
-                        </p>
-                        
-                        <div class="flex items-center justify-center mb-6">
-                            <div class="h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent w-full max-w-md"></div>
+                        <div class="py-2 px-4">
+                            <p class="text-white text-opacity-70 text-sm md:text-base italic max-w-md">
+                                "Whatever you do, work at it with all your heart, for the Lord and not for man"
+                                <span class="text-white text-opacity-40 block mt-2 text-xs md:text-sm">— Colossians 3:23</span>
+                            </p>
                         </div>
                         
-                        <div class="py-2 px-4">
-                            <p class="text-gray-400 text-sm md:text-base italic">
+                        <!-- <p class="text-white text-opacity-70 mt-3 mb-6 text-sm md:text-base max-w-2xl mx-auto">
+                            Explore some of my projects and things I've done before
+                        </p> -->
+                        
+                        <!-- <div class="flex items-center justify-center mb-6">
+                            <div class="h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent w-full max-w-md"></div>
+                        </div> -->
+                        
+                        <!-- <div class="py-2 px-4">
+                            <p class="text-white text-opacity-70 text-sm md:text-base italic">
                                 "Whatever you do, work at it with all your heart"
                                 <span class="text-gray-500 block mt-1 text-xs md:text-sm">— Colossians 3:23</span>
                             </p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 
                 <!-- Tab Navigation -->
-                <div class="terminal-tabs border-0 border-y border-gray-700 bg-black">
+                <div class="border-0 border-y border-white border-opacity-15 bg-black">
                     <div class="flex justify-between text-sm sm:text-base md:text-lg">
-                        <button class="tab-button active py-4 px-4 flex-1 text-center" data-tab="projects">Projects</button>
-                        <button class="tab-button py-4 px-4 flex-1 text-center" data-tab="work">My Work</button>
-                        <button class="tab-button py-4 px-4 flex-1 text-center" data-tab="self-hosted">Self Hosted</button>
-                        <button class="tab-button py-4 px-4 flex-1 text-center" data-tab="friends">Tech Friends</button>
+                        <button class="tab-button py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-white border-opacity-30" data-tab="projects">Projects</button>
+                        <button class="tab-button py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-transparent" data-tab="work">My Work</button>
+                        <button class="tab-button py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-transparent" data-tab="self-hosted">Self Hosted</button>
+                        <button class="tab-button py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-transparent" data-tab="friends">Tech Friends</button>
                     </div>
                 </div>
                 
                 <!-- Content Area -->
-                <div class="terminal-content p-4 md:p-6 bg-black">
+                <div class="p-4 md:p-6 bg-black flex-grow" style="min-height: calc(100vh - 270px);">
                     <!-- Projects Tab (Default Active) -->
-                    <div class="tab-content active" id="projects-content">
+                    <div class="block min-h-full" id="projects-content">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="projects-container">
                             <!-- Cards will be dynamically inserted here -->
                         </div>
                     </div>
                     
                     <!-- Work Tab -->
-                    <div class="tab-content hidden" id="work-content">
+                    <div class="hidden min-h-full" id="work-content">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="work-container">
                             <!-- Work items will be dynamically inserted here -->
                         </div>
                     </div>
                     
                     <!-- Self Hosted Tab -->
-                    <div class="tab-content hidden" id="self-hosted-content">
+                    <div class="hidden min-h-full" id="self-hosted-content">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="self-hosted-container">
                             <!-- Self hosted items will be dynamically inserted here -->
                         </div>
                     </div>
                     
                     <!-- Tech Friends Tab -->
-                    <div class="tab-content hidden" id="friends-content">
+                    <div class="hidden min-h-full" id="friends-content">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="friends-container">
                             <!-- Friends items will be dynamically inserted here -->
                         </div>
@@ -102,29 +110,5 @@
                 </div>
             </div>
         </main>
-        
-        <!-- Social Links fixed at bottom -->
-        <div class="w-full py-6 text-center z-10 mt-auto">
-            <div class="flex justify-center space-x-6 items-center text-gray-400">
-                <a href="https://github.com/ZachLTech" target="_blank" class="text-2xl md:text-3xl hover:text-white transition-colors">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/zachary-lopez-304629243/" target="_blank" class="text-2xl md:text-3xl hover:text-[#2069c9] transition-colors">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:zlopezzl2021@gmail.com" target="_blank" class="text-2xl md:text-3xl hover:text-red-400 transition-colors">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="https://discord.com/users/829875896864866314" target="_blank" class="text-2xl md:text-3xl hover:text-[#738ADB] transition-colors">
-                    <i class="fab fa-discord"></i>
-                </a>
-                <a href="https://www.instagram.com/playpxco/" target="_blank" class="text-2xl md:text-3xl hover:text-[#e6683c] transition-colors">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-        
-        
-        <script src="scripts.js"></script>
     </body>
 </html>

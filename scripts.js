@@ -11,7 +11,40 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ensure full height on mobile
     adjustHeight();
     window.addEventListener('resize', adjustHeight);
+
+    const tabButtons = document.querySelectorAll('.tab-button');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Get the tab to show
+            const tabToShow = this.dataset.tab;
+            
+            // Hide all tab contents
+            document.querySelectorAll('[id$="-content"]').forEach(content => {
+                content.classList.add('hidden');
+                content.classList.remove('block');
+            });
+            
+            // Show the selected tab content
+            document.getElementById(tabToShow + '-content').classList.remove('hidden');
+            document.getElementById(tabToShow + '-content').classList.add('block');
+            
+            // Update tab button styles
+            tabButtons.forEach(btn => {
+                btn.classList.remove('text-white', 'border-white');
+                btn.classList.add('text-white', 'text-opacity-50', 'border-transparent');
+            });
+            
+            // Set active tab style
+            this.classList.remove('text-white', 'text-opacity-50', 'border-transparent');
+            this.classList.add('text-white', 'border-white');
+        });
+    });
+    
+    // Set first tab as active by default
+    tabButtons[0].click();
 });
+
 
 // Adjust height for mobile
 function adjustHeight() {

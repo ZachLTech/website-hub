@@ -133,9 +133,9 @@ html, body {
     background: #0f0f0f;
 }
 
-.card:hover .card-title {
-    color: #3B82F6;
-}
+/* .card:hover .card-title {
+    color: #ffffffb7;
+} */
 
 /* Remove the link indicator */
 .card-link-indicator {
@@ -355,6 +355,7 @@ html, body {
 }
 
 .fade-in {
+    opacity: 0;
     animation: fadeIn 0.6s ease-out forwards;
 }
 
