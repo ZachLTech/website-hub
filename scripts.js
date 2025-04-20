@@ -133,12 +133,12 @@ function setupHashBasedTabs() {
 
 // Handle hash changes to switch tabs
 function handleHashChange() {
-    // Get the current hash (without #) or default to 'projects'
-    let tabId = window.location.hash.substring(1) || 'projects';
+    // Get the current hash (without #) or default to 'featured'
+    let tabId = window.location.hash.substring(1) || 'featured';
     
     // Only accept valid tab IDs
-    if (!['projects', 'work', 'self-hosted', 'friends'].includes(tabId)) {
-        tabId = 'projects';
+    if (!['featured', 'projects', 'work', 'self-hosted', 'friends'].includes(tabId)) {
+        tabId = 'featured';
     }
     
     // Switch to the tab

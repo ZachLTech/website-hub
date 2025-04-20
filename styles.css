@@ -290,6 +290,37 @@ html, body {
     border: 1px solid rgba(156, 39, 176, 0.4);
 }
 
+/* Tag colors - Add new color schemes for featured tags */
+.tag-personal {
+    background-color: rgba(139, 92, 246, 0.2);
+    color: #8B5CF6;
+    border: 1px solid rgba(139, 92, 246, 0.4);
+}
+
+.tag-resume, .tag-professional {
+    background-color: rgba(14, 165, 233, 0.2);
+    color: #0EA5E9;
+    border: 1px solid rgba(14, 165, 233, 0.4);
+}
+
+.tag-writing, .tag-blog {
+    background-color: rgba(236, 72, 153, 0.2);
+    color: #EC4899;
+    border: 1px solid rgba(236, 72, 153, 0.4);
+}
+
+.tag-social {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: #3B82F6;
+    border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.tag-contact, .tag-email {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #10B981;
+    border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
 /* Status indicator */
 .status {
     position: absolute;

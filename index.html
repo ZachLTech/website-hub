@@ -53,10 +53,11 @@
                     </div>
                 </div>
                 
-                <!-- Tab Navigation - Updated to use hash links -->
+                <!-- Tab Navigation - Updated with Featured tab -->
                 <div class="border-0 border-y border-white border-opacity-15 bg-black">
                     <div class="flex justify-between text-sm sm:text-base md:text-lg">
-                        <a href="#projects" class="tab-link py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-white border-opacity-30" data-tab="projects">Projects</a>
+                        <a href="#featured" class="tab-link py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-white border-opacity-30" data-tab="featured">Featured</a>
+                        <a href="#projects" class="tab-link py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-transparent" data-tab="projects">Projects</a>
                         <a href="#work" class="tab-link py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-transparent" data-tab="work">My Work</a>
                         <a href="#self-hosted" class="tab-link py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-transparent" data-tab="self-hosted">Self Hosted</a>
                         <a href="#friends" class="tab-link py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-transparent" data-tab="friends">Tech Friends</a>
@@ -65,8 +66,15 @@
                 
                 <!-- Content Area -->
                 <div class="p-4 md:p-6 bg-black flex-grow" style="min-height: calc(100vh - 270px);">
-                    <!-- Projects Tab (Default Active) -->
-                    <div class="block min-h-full" id="projects-content">
+                    <!-- Featured Tab (New Default Active) -->
+                    <div class="block min-h-full" id="featured-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="featured-container">
+                            <!-- Featured cards will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Projects Tab -->
+                    <div class="hidden min-h-full" id="projects-content">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="projects-container">
                             <!-- Cards will be dynamically inserted here -->
                         </div>

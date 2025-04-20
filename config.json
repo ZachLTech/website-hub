@@ -1,5 +1,53 @@
 [
     {
+        "title": "My Resume",
+        "description": "Check out my professional resume to learn more about my skills, experience, and education.",
+        "tags": ["Personal", "Resume", "Professional"],
+        "status": "Active",
+        "link": "https://resume-pdf.zachl.tech",
+        "section": "featured"
+    },
+    {
+        "title": "Blog",
+        "description": "Read my latest thoughts, tutorials, and insights on technology, programming, and personal development.",
+        "tags": ["Personal", "Writing", "Tech"],
+        "status": "Active",
+        "link": "https://blog.zachl.tech",
+        "section": "featured"
+    },
+    {
+        "title": "GitHub",
+        "description": "Explore my open-source projects and contributions on GitHub. Follow me to stay updated on my latest work.",
+        "tags": ["Social", "Code", "Open Source"],
+        "status": "Active",
+        "link": "https://github.com/ZachLTech",
+        "section": "featured"
+    },
+    {
+        "title": "LinkedIn",
+        "description": "Connect with me professionally on LinkedIn to see my career journey and professional network.",
+        "tags": ["Social", "Professional", "Network"],
+        "status": "Active",
+        "link": "https://linkedin.com/in/zacharyalopez",
+        "section": "featured"
+    },
+    {
+        "title": "Twitter",
+        "description": "Follow me on Twitter for quick updates, thoughts, and tech discussions. Let's connect!",
+        "tags": ["Social", "Updates", "Personal"],
+        "status": "Active",
+        "link": "https://twitter.com/ZachLTech",
+        "section": "featured"
+    },
+    {
+        "title": "Contact Me",
+        "description": "Get in touch directly via email for professional inquiries, collaboration opportunities, or just to say hello.",
+        "tags": ["Contact", "Email", "Connect"],
+        "status": "Active",
+        "link": "mailto:contact@zachl.tech",
+        "section": "featured"
+    },
+    {
         "title": "SSHfolio",
         "description": "SSHfolio is a modular TUI (Text User Interface) portfolio application based on the Bubble Tea framework. This project allows you to showcase your portfolio in a terminal environment, providing a unique way to present your projects, biography, contact information, and more.",
         "tags": ["Terminal", "Go", "TUI", "Portfolio"],
