@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load and display projects
     loadProjects();
     
-    // Set up tab navigation
-    setupTabs();
+    // Set up tab navigation with hash support
+    setupHashBasedTabs();
     
     // Copy to clipboard functionality
     setupCopyFunctions();
@@ -11,40 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ensure full height on mobile
     adjustHeight();
     window.addEventListener('resize', adjustHeight);
-
-    const tabButtons = document.querySelectorAll('.tab-button');
-    
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Get the tab to show
-            const tabToShow = this.dataset.tab;
-            
-            // Hide all tab contents
-            document.querySelectorAll('[id$="-content"]').forEach(content => {
-                content.classList.add('hidden');
-                content.classList.remove('block');
-            });
-            
-            // Show the selected tab content
-            document.getElementById(tabToShow + '-content').classList.remove('hidden');
-            document.getElementById(tabToShow + '-content').classList.add('block');
-            
-            // Update tab button styles
-            tabButtons.forEach(btn => {
-                btn.classList.remove('text-white', 'border-white');
-                btn.classList.add('text-white', 'text-opacity-50', 'border-transparent');
-            });
-            
-            // Set active tab style
-            this.classList.remove('text-white', 'text-opacity-50', 'border-transparent');
-            this.classList.add('text-white', 'border-white');
-        });
-    });
-    
-    // Set first tab as active by default
-    tabButtons[0].click();
 });
-
 
 // Adjust height for mobile
 function adjustHeight() {
@@ -71,6 +38,9 @@ async function loadProjects() {
             displayProjects(projectsBySection[section], section);
         });
         
+        // After loading projects, check URL hash to determine which tab to display
+        handleHashChange();
+        
     } catch (error) {
         console.error('Error loading projects:', error);
     }
@@ -91,24 +61,22 @@ function displayProjects(projects, containerId) {
     let delay = 0;
     
     projects.forEach(project => {
-        const card = createCard(project, delay);
+        const card = createLinkCard(project, delay);
         container.appendChild(card);
         delay += 100;
     });
 }
 
-// Create a card element from project data
-function createCard(project, delay) {
-    const card = document.createElement('div');
-    card.className = 'card fade-in cursor-pointer';
-    card.style.animationDelay = `${delay}ms`;
-    
-    // Make the entire card clickable
-    card.addEventListener('click', () => {
-        if (project.link) {
-            window.open(project.link, '_blank');
-        }
-    });
+// Create a card element from project data - now as an anchor element
+function createLinkCard(project, delay) {
+    // Create an anchor wrapper for the entire card
+    const cardLink = document.createElement('a');
+    cardLink.href = project.link || '#';
+    cardLink.target = "_blank";
+    cardLink.rel = "noopener noreferrer";
+    cardLink.className = 'card fade-in cursor-pointer';
+    cardLink.style.animationDelay = `${delay}ms`;
+    cardLink.setAttribute('aria-label', `Visit ${project.title}`);
     
     // Create status indicator if provided
     let statusHtml = '';
@@ -128,7 +96,7 @@ function createCard(project, delay) {
         tagsHtml += '</div>';
     }
     
-    card.innerHTML = `
+    cardLink.innerHTML = `
         ${statusHtml}
         <div class="card-content">
             <h3 class="card-title">${project.title}</h3>
@@ -137,41 +105,77 @@ function createCard(project, delay) {
         </div>
     `;
     
-    return card;
+    return cardLink;
 }
 
-// Setup tab functionality
-function setupTabs() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabContents = document.querySelectorAll('.tab-content');
-    
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const tabId = button.getAttribute('data-tab');
+// Setup hash-based tab navigation
+function setupHashBasedTabs() {
+    // Update tab navigation links to handle clicking properly
+    document.querySelectorAll('.tab-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default anchor behavior
             
-            // Update active tab button
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
+            // Extract tab name from href attribute
+            const hash = this.getAttribute('href');
+            const tabId = hash.substring(1); // Remove # from the beginning
             
-            // Hide all tab contents first
-            tabContents.forEach(content => {
-                content.classList.remove('active');
-                content.classList.add('hidden');
-            });
+            // Update URL without reloading the page
+            window.history.pushState(null, null, hash);
             
-            // Show active tab content with animation
-            const activeContent = document.getElementById(`${tabId}-content`);
-            activeContent.classList.remove('hidden');
-            
-            // Small delay to ensure transition works
-            setTimeout(() => {
-                activeContent.classList.add('active');
-            }, 50);
+            // Switch to the selected tab
+            switchToTab(tabId);
         });
     });
+    
+    // Handle browser back/forward navigation
+    window.addEventListener('hashchange', handleHashChange);
 }
 
-// Setup copy functions
+// Handle hash changes to switch tabs
+function handleHashChange() {
+    // Get the current hash (without #) or default to 'projects'
+    let tabId = window.location.hash.substring(1) || 'projects';
+    
+    // Only accept valid tab IDs
+    if (!['projects', 'work', 'self-hosted', 'friends'].includes(tabId)) {
+        tabId = 'projects';
+    }
+    
+    // Switch to the tab
+    switchToTab(tabId);
+}
+
+// Switch to specified tab
+function switchToTab(tabId) {
+    // Hide all tab contents
+    document.querySelectorAll('[id$="-content"]').forEach(content => {
+        content.classList.add('hidden');
+        content.classList.remove('block');
+    });
+    
+    // Show the selected tab content
+    const selectedContent = document.getElementById(tabId + '-content');
+    if (selectedContent) {
+        selectedContent.classList.remove('hidden');
+        selectedContent.classList.add('block');
+    }
+    
+    // Update tab link styles
+    document.querySelectorAll('.tab-link').forEach(link => {
+        // Remove active styles
+        link.classList.remove('border-white', 'border-opacity-30');
+        link.classList.add('border-transparent');
+    });
+    
+    // Set active tab style
+    const activeLink = document.querySelector(`.tab-link[href="#${tabId}"]`);
+    if (activeLink) {
+        activeLink.classList.remove('border-transparent');
+        activeLink.classList.add('border-white', 'border-opacity-30');
+    }
+}
+
+// Setup copy functions - preserved from original code
 function setupCopyFunctions() {
     // Discord username copy function
     window.copyToClipboardDiscord = function() {
