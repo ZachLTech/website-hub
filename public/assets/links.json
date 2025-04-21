@@ -1,0 +1,339 @@
+[
+    {
+        "title": "About Me",
+        "description": "Read more about who I am, what I'm currently doing, what my goals are, what my plan for the future looks like, and more.",
+        "tags": [
+            {"name": "Personal", "color": "default"}
+        ],
+        "status": "Development",
+        "link": "https://byeurl.cyou/comingsoon",
+        "section": "featured"
+    },
+    {
+        "title": "My Resume",
+        "description": "Check out a web rendition of my resume to learn more about my skills, experience, and education.",
+        "tags": [
+            {"name": "Personal", "color": "default"}
+        ],
+        "status": "",
+        "link": "https://resume.zachl.tech",
+        "section": "featured"
+    },
+    {
+        "title": "My Resume - PDF",
+        "description": "PDF version of my professional resume. Some info has been redacted as this is a public, more generalized version.",
+        "tags": [
+            {"name": "Personal", "color": "default"},
+            {"name": "Professional", "color": "teal"}
+        ],
+        "status": "",
+        "link": "https://resume-pdf.zachl.tech",
+        "section": "featured"
+    },
+    {
+        "title": "Blog",
+        "description": "Read my latest thoughts, tutorials, and insights on technology, programming, and personal development.",
+        "tags": [
+            {"name": "Personal", "color": "default"},
+            {"name": "Writing", "color": "purple"},
+            {"name": "Tech", "color": "blue"}
+        ],
+        "status": "Development",
+        "link": "https://byeurl.cyou/comingsoon",
+        "section": "featured"
+    },
+    {
+        "title": "GitHub",
+        "description": "Explore my open-source projects and contributions on GitHub. Follow me to stay updated on my latest work.",
+        "tags": [
+            {"name": "Social", "color": "green"},
+            {"name": "Code", "color": "blue"},
+            {"name": "Open Source", "color": "orange"}
+        ],
+        "status": "",
+        "link": "https://github.com/ZachLTech",
+        "section": "featured"
+    },
+    {
+        "title": "LinkedIn",
+        "description": "Connect with me professionally on LinkedIn to see my career journey and professional network.",
+        "tags": [
+            {"name": "Social", "color": "green"},
+            {"name": "Professional", "color": "teal"},
+            {"name": "Network", "color": "pink"}
+        ],
+        "status": "",
+        "link": "https://www.linkedin.com/in/zachary-lopez-304629243/",
+        "section": "featured"
+    },
+    {
+        "title": "Other Socials",
+        "description": "Here, you'll find all my socials publicly available.",
+        "tags": [
+            {"name": "Social", "color": "green"},
+            {"name": "Personal", "color": "default"}
+        ],
+        "status": "",
+        "link": "https://zachl.tech",
+        "section": "featured"
+    },
+    {
+        "title": "Contact Me",
+        "description": "Get in touch directly via email for professional inquiries, collaboration opportunities, or just to say hello.",
+        "tags": [
+            {"name": "Contact", "color": "green"},
+            {"name": "Email", "color": "purple"},
+            {"name": "Connect", "color": "pink"}
+        ],
+        "status": "Available",
+        "link": "mailto:contact@zachl.tech",
+        "section": "featured"
+    },
+    {
+        "title": "SSHfolio",
+        "description": "SSHfolio is a modular TUI (Text User Interface) portfolio application based on the Bubble Tea framework. This project allows you to showcase your portfolio in a terminal environment, providing a unique way to present your projects, biography, contact information, and more.",
+        "tags": [
+            {"name": "Terminal", "color": "default"},
+            {"name": "Go", "color": "blue"},
+            {"name": "TUI", "color": "purple"}
+        ],
+        "status": "Active",
+        "link": "https://sshfolio.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "Bentofolio",
+        "description": "Bentofolio is my personal portfolio project that showcases my skills and expertise through a bento grid-style layout. Built using Nuxt.js and TailwindCSS, it offers an interactive and visually appealing interface.",
+        "tags": [
+            {"name": "Nuxt.js", "color": "green"},
+            {"name": "TailwindCSS", "color": "blue"},
+            {"name": "SwiperJS", "color": "blue"}
+        ],
+        "status": "Archived",
+        "link": "https://bentofolio.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "AEV-Software",
+        "description": "The Alset Solar Cybersedan Software is a comprehensive full-stack ecosystem developed for the FAUHS AEV solar car, enabling seamless integration and operation of various hardware components.",
+        "tags": [
+            {"name": "Full-Stack", "color": "pink"},
+            {"name": "IoT", "color": "blue"},
+            {"name": "Hardware", "color": "teal"},
+            {"name": "Engineering", "color": "orange"}
+        ],
+        "status": "Past",
+        "link": "https://aev.zachl.tech",
+        "section": "work"
+    },
+    {
+        "title": "Devfolify",
+        "description": "Devfolify is a full stack application designed to provide personalized coding challenges. Our goal is to move beyond the traditional lists of beginner or advanced projects and offer unique, skill-level tailored challenges.",
+        "tags": [
+            {"name": "Full-Stack", "color": "pink"},
+            {"name": "Education", "color": "yellow"},
+            {"name": "Waitlist", "color": "green"},
+            {"name": "JavaScript", "color": "yellow"}
+        ],
+        "status": "Hiatus",
+        "link": "https://devfolify.com",
+        "section": "projects"
+    },
+    {
+        "title": "Schedulix",
+        "description": "Schedulix is a program that helps university students develop their course schedules for their upcoming semester. It takes in the user's preferences and generates multiple schedules that fit the user's preferences.",
+        "tags": [
+            {"name": "JavaScript", "color": "yellow"},
+            {"name": "Node.js", "color": "blue"},
+            {"name": "Hackathon Winner", "color": "pink"},
+            {"name": "Algorithms", "color": "red"}
+        ],
+        "status": "Archived",
+        "link": "https://schedulixfedemo.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "WebDevDocs",
+        "description": "A no-nonsense web development course meant to help guide learners to develop web applications the right way, with basic instruction and explanation followed by practice and mini project-based experimenting.",
+        "tags": [
+            {"name": "Education", "color": "yellow"},
+            {"name": "Web Development", "color": "blue"},
+            {"name": "Docus", "color": "default"}
+        ],
+        "status": "Hiatus",
+        "link": "https://webdev.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "MemeAPI",
+        "description": "A fun API built with ElysiaJS using Bun runtime that serves random memes and funny content.",
+        "tags": [
+            {"name": "REST API", "color": "default"},
+            {"name": "ElysiaJS", "color": "blue"},
+            {"name": "Bun", "color": "purple"},
+            {"name": "JavaScript", "color": "yellow"}
+        ],
+        "status": "Archived",
+        "link": "https://memes.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "eXit",
+        "description": "A recreation of the game eXit as seen in the television series Mr. Robot in season 4 episode 11, served through an actual terminal via SSH.",
+        "tags": [
+            {"name": "Terminal", "color": "default"},
+            {"name": "Game", "color": "pink"},
+            {"name": "SSH", "color": "red"},
+            {"name": "Go", "color": "blue"}
+        ],
+        "status": "Archived",
+        "link": "https://github.com/ZachLTech/eXit",
+        "section": "projects"
+    },
+    {
+        "title": "Ansify",
+        "description": "A Go package that turns any image into color-coded ANSI blocks for terminal display, solving the readability issues of traditional ASCII image converters.",
+        "tags": [
+            {"name": "Go", "color": "blue"},
+            {"name": "Terminal", "color": "default"},
+            {"name": "Graphics", "color": "pink"},
+            {"name": "Library", "color": "blue"}
+        ],
+        "status": "Active",
+        "link": "https://github.com/ZachLTech/ansify",
+        "section": "projects"
+    },
+    {
+        "title": "Accessh",
+        "description": "An SSH-based directory of services and applications, providing navigation assistance to various SSH-accessible tools in my infrastructure.",
+        "tags": [
+            {"name": "SSH", "color": "red"},
+            {"name": "Terminal", "color": "default"},
+            {"name": "Directory", "color": "pink"},
+            {"name": "Infrastructure", "color": "orange"}
+        ],
+        "status": "Hiatus",
+        "link": "https://github.com/ZachLTech/Accessh",
+        "section": "projects"
+    },
+    {
+        "title": "404",
+        "description": "A custom 404 page for my websites, adding a bit of personality to the error experience.",
+        "tags": [
+            {"name": "Web", "color": "blue"},
+            {"name": "Error Page", "color": "pink"},
+            {"name": "HTML/CSS", "color": "orange"},
+            {"name": "JavaScript", "color": "yellow"}
+        ],
+        "status": "Archived",
+        "link": "https://404.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "Palm Beach Outreach",
+        "description": "A Local Volunteering Platform for a non-profit I help run called Palm Beach Outreach. We're a student run non-profit aiming to help our community in every way possible.",
+        "tags": [
+            {"name": "Volunteering", "color": "purple"},
+            {"name": "Web", "color": "blue"},
+            {"name": "Local", "color": "yellow"}
+        ],
+        "status": "Active",
+        "link": "https://palmbeachoutreach.com",
+        "section": "work"
+    },
+    {
+        "title": "Fileshare",
+        "description": "A self-hosted file sharing service that serves as a replacement for cloud storage applications like Dropbox, providing convenient personal file management.",
+        "tags": [
+            {"name": "Files", "color": "teal"},
+            {"name": "Transfer", "color": "blue"}
+        ],
+        "status": "Active",
+        "link": "https://share.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
+        "title": "SearXNG",
+        "description": "A self-hosted meta search engine that aggregates results from multiple sources while preserving privacy, serving as an alternative to commercial search engines.",
+        "tags": [
+            {"name": "Search Engine", "color": "blue"},
+            {"name": "Privacy", "color": "red"}
+        ],
+        "status": "Active",
+        "link": "https://search.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
+        "title": "Fireshare",
+        "description": "A self-hosted service based on an open-source project that enables video sharing without relying on platforms like YouTube.",
+        "tags": [
+            {"name": "Video", "color": "teal"},
+            {"name": "Sharing", "color": "blue"},
+            {"name": "Media", "color": "purple"}
+        ],
+        "status": "Active",
+        "link": "https://fireshare.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
+        "title": "Thandi",
+        "description": "Self-taught & full-stack developer who loves helping with various projects and competing in hackathons. Particularly enthusiastic about object-oriented programming.",
+        "tags": [
+            {"name": "Typescript", "color": "blue"},
+            {"name": "OOP", "color": "teal"},
+            {"name": "Minecrafter", "color": "green"}
+        ],
+        "status": "",
+        "link": "https://str1ke.codes",
+        "section": "friends"
+    },
+    {
+        "title": "Amarnath",
+        "description": "Developed an interest in programming through computer science fundamentals. Known for exploring different operating systems and advocating for GNU/Linux.",
+        "tags": [
+            {"name": "C++", "color": "blue"},
+            {"name": "GNU/Linux", "color": "default"},
+            {"name": "OS", "color": "green"}
+        ],
+        "status": "",
+        "link": "https://jeebuscrossaint.github.io",
+        "section": "friends"
+    },
+    {
+        "title": "Makai",
+        "description": "Enthusiastic with diverse interests including coding, Blender modeling, piano playing, vibe coding, and photography.",
+        "tags": [
+            {"name": "Python", "color": "blue"},
+            {"name": "3D Modeling", "color": "pink"},
+            {"name": "Photography", "color": "teal"},
+            {"name": "Vibe Coding", "color": "purple"}
+        ],
+        "status": "",
+        "link": "https://makaip.com",
+        "section": "friends"
+    },
+    {
+        "title": "Alex",
+        "description": "Much research experience and extensive experience across various computer science fields.",
+        "tags": [
+            {"name": "Java", "color": "red"},
+            {"name": "3D Graphics", "color": "purple"},
+            {"name": "Development", "color": "blue"},
+            {"name": "Academic", "color": "yellow"}
+        ],
+        "status": "",
+        "link": "https://www.alexcastronovo.com",
+        "section": "friends"
+    },
+    {
+        "title": "Jossaya",
+        "description": "Known for enthusiasm and willingness to dive into new coding projects & challenges.",
+        "tags": [
+            {"name": "Typescript", "color": "blue"},
+            {"name": "Research", "color": "teal"}
+        ],
+        "status": "",
+        "link": "https://jcamille2023.github.io",
+        "section": "friends"
+    }
+]
