@@ -132,7 +132,7 @@
         "tags": [
             {"name": "Personal", "color": "default"}
         ],
-        "status": "",
+        "status": "Outdated",
         "link": "https://resume.zachl.tech",
         "section": "featured"
     },
@@ -143,7 +143,7 @@
             {"name": "Personal", "color": "default"},
             {"name": "Professional", "color": "teal"}
         ],
-        "status": "",
+        "status": "Outdated",
         "link": "https://resume-pdf.zachl.tech",
         "section": "featured"
     },
