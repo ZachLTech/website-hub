@@ -1,5 +1,122 @@
 [
     {
+        "title": "Palm Beach Outreach",
+        "description": "A Local Volunteering Platform for a non-profit I help run called Palm Beach Outreach. We're a student run non-profit aiming to help our community in every way possible.",
+        "tags": [
+            {"name": "Volunteering", "color": "purple"},
+            {"name": "Web", "color": "blue"},
+            {"name": "Local", "color": "yellow"}
+        ],
+        "status": "Active",
+        "link": "https://palmbeachoutreach.com",
+        "section": "work"
+    },
+    {
+        "title": "WebOrbit",
+        "description": "Interactive 3D website sitemap visualization tool that helps developers and site owners understand website structure through an immersive, explorable graph. Created for OwlHacks 2025.",
+        "tags": [
+          {"name": "Hackathon Winner", "color": "pink"},
+          {"name": "3D Graphics", "color": "purple"},
+          {"name": "Go", "color": "blue"},
+          {"name": "Web Visualization", "color": "orange"}
+        ],
+        "status": "Development",
+        "link": "https://weborbit.zachl.tech",
+        "section": "projects"
+    },
+    {
+        "title": "Excalihub",
+        "description": "An open-source alternative to Excalidraw+ with enhanced features for managing and organizing Excalidraw whiteboards, built with a focus on collaboration and extensibility.",
+        "tags": [
+          {"name": "Open Source", "color": "orange"},
+          {"name": "Collaboration", "color": "green"},
+          {"name": "Design", "color": "pink"},
+          {"name": "Excalidraw", "color": "purple"}
+        ],
+        "status": "Development",
+        "link": "https://github.com/ZachLTech/excalihub",
+        "section": "projects"
+    },
+    {
+        "title": "Gitea",
+        "description": "Self-hosted Git service for managing off-the-radar projects, providing a platform for collaboration outside mainstream Git hosting services.",
+        "tags": [
+          {"name": "Git", "color": "default"},
+          {"name": "Collaboration", "color": "green"}
+        ],
+        "status": "Active",
+        "link": "https://gitea.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
+        "title": "Analytics",
+        "description": "Privacy-focused website analytics using Plausible Analytics, providing insights without compromising user data.",
+        "tags": [
+          {"name": "Analytics", "color": "blue"},
+          {"name": "Privacy", "color": "red"}
+        ],
+        "status": "Active",
+        "link": "https://analytics.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
+        "title": "ByeURL",
+        "description": "Custom URL shortener service for creating concise links to longer web addresses, simplifying link sharing and tracking.",
+        "tags": [
+          {"name": "Tool", "color": "blue"},
+          {"name": "Web", "color": "teal"},
+          {"name": "Utility", "color": "purple"}
+        ],
+        "status": "Active",
+        "link": "https://byeurl.cyou",
+        "section": "self-hosted"
+    },
+    {
+        "title": "OpenQuill",
+        "description": "Modern, self-hosted blogging platform built for developers and writers with support for multiple users, featuring a clean, minimalist interface and excellent user experience.",
+        "tags": [
+          {"name": "Self-hosted", "color": "purple"},
+          {"name": "Blogging", "color": "green"},
+          {"name": "Open Source", "color": "orange"}
+        ],
+        "status": "Active",
+        "link": "https://github.com/ZachLTech/OpenQuill",
+        "section": "projects"
+    },
+    {
+        "title": "Movie Web",
+        "description": "Self-hosted streaming platform for movies and shows scraped from other streaming services, currently inactive as an alternative instance is available.",
+        "tags": [
+          {"name": "Streaming", "color": "purple"},
+          {"name": "Media", "color": "red"}
+        ],
+        "status": "Inactive",
+        "link": "https://pstream.org",
+        "section": "self-hosted"
+    },
+    {
+        "title": "Vikunja",
+        "description": "Personal task management and organization platform I use for tracking todos and managing projects efficiently.",
+        "tags": [
+          {"name": "Productivity", "color": "green"},
+          {"name": "Task Management", "color": "blue"}
+        ],
+        "status": "Active",
+        "link": "https://todo.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
+        "title": "Browserless",
+        "description": "Self-hosted headless browser service for Puppeteer-based APIs and web automation projects, eliminating the need for external browser services.",
+        "tags": [
+          {"name": "API", "color": "teal"},
+          {"name": "Automation", "color": "purple"}
+        ],
+        "status": "Active",
+        "link": "https://browserless.zachl.tech",
+        "section": "self-hosted"
+    },
+    {
         "title": "About Me",
         "description": "Read more about who I am, what I'm currently doing, what my goals are, what my plan for the future looks like, and more.",
         "tags": [
@@ -67,6 +184,18 @@
         "section": "featured"
     },
     {
+        "title": "YouTube",
+        "description": "My YouTube channel featuring tech demos, tutorials, and project showcases related to my development work.",
+        "tags": [
+          {"name": "Social", "color": "green"},
+          {"name": "Media", "color": "red"},
+          {"name": "Tech", "color": "blue"}
+        ],
+        "status": "",
+        "link": "https://youtube.com/@ZachLTech",
+        "section": "featured"
+    },
+    {
         "title": "Other Socials",
         "description": "Here, you'll find all my socials publicly available.",
         "tags": [
@@ -114,6 +243,19 @@
         "section": "projects"
     },
     {
+        "title": "FAU Undergraduate Research",
+        "description": "Completed FAU OURI Grant funded research under FAU: \"Assessing the Efficacy of AI Detectors and Countermeasures in Generative AI\". There isn't much documentation on it but we basically analyzed methodology of evading AI detectors and their efficiency at detecting AI generated text.",
+        "tags": [
+            {"name": "Research", "color": "purple"},
+            {"name": "Grant Funded", "color": "blue"},
+            {"name": "FAU", "color": "red"},
+            {"name": "AI/ML", "color": "teal"}
+        ],
+        "status": "Past",
+        "link": "https://www.fau.edu/ouri/",
+        "section": "work"
+    },
+    {
         "title": "AEV-Software",
         "description": "The Alset Solar Cybersedan Software is a comprehensive full-stack ecosystem developed for the FAUHS AEV solar car, enabling seamless integration and operation of various hardware components.",
         "tags": [
@@ -148,7 +290,7 @@
             {"name": "Hackathon Winner", "color": "pink"},
             {"name": "Algorithms", "color": "red"}
         ],
-        "status": "Archived",
+        "status": "Inactive",
         "link": "https://schedulixfedemo.zachl.tech",
         "section": "projects"
     },
@@ -228,18 +370,6 @@
         "status": "Archived",
         "link": "https://404.zachl.tech",
         "section": "projects"
-    },
-    {
-        "title": "Palm Beach Outreach",
-        "description": "A Local Volunteering Platform for a non-profit I help run called Palm Beach Outreach. We're a student run non-profit aiming to help our community in every way possible.",
-        "tags": [
-            {"name": "Volunteering", "color": "purple"},
-            {"name": "Web", "color": "blue"},
-            {"name": "Local", "color": "yellow"}
-        ],
-        "status": "Active",
-        "link": "https://palmbeachoutreach.com",
-        "section": "work"
     },
     {
         "title": "Fileshare",
@@ -335,5 +465,53 @@
         "status": "",
         "link": "https://jcamille2023.github.io",
         "section": "friends"
+    },
+    {
+        "title": "Eduquest",
+        "description": "AI-powered interest-based learning platform designed to revolutionize education by tailoring learning experiences to individual passions and preferences.",
+        "tags": [
+          {"name": "Education", "color": "yellow"},
+          {"name": "AI", "color": "blue"},
+          {"name": "Hackathon", "color": "pink"}
+        ],
+        "status": "Inactive",
+        "link": "https://github.com/EduquestAI/Eduquest-Qubitx",
+        "section": "projects"
+    },
+    {
+        "title": "Illuminate 2024",
+        "description": "Custom website designed for a hackathon event, showcasing event details, schedule, and registration information with a modern, responsive interface.",
+        "tags": [
+          {"name": "Event", "color": "purple"},
+          {"name": "Website", "color": "blue"},
+          {"name": "Community", "color": "default"}
+        ],
+        "status": "Past",
+        "link": "https://zachltech.github.io/illuminate-website/",
+        "section": "work"
+    },
+    {
+        "title": "Physical Size of the Internet",
+        "description": "My first ever website exploring the hypothetical physical storage requirements of the entire internet, featuring real-time calculations and visualizations of data center dimensions.",
+        "tags": [
+          {"name": "Data Visualization", "color": "blue"},
+          {"name": "Analytics", "color": "red"},
+          {"name": "First Web Project", "color": "purple"}
+        ],
+        "status": "Archived",
+        "link": "https://zachltech.github.io/PhysicalSizeOfTheInternetSite/",
+        "section": "projects"
+    },
+    {
+        "title": "Smart Mouse Clicker",
+        "description": "Computer vision-based automation tool that uses image recognition to locate and click on specific elements on your screen, my first Python project combining GUI and computer vision.",
+        "tags": [
+          {"name": "Python", "color": "blue"},
+          {"name": "Computer Vision", "color": "purple"},
+          {"name": "Automation", "color": "orange"}
+        ],
+        "status": "Archived",
+        "link": "https://github.com/ZachLTech/Smart-Mouse-Clicker",
+        "section": "projects"
     }
 ]

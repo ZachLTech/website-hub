@@ -145,6 +145,12 @@ html, body {
 }
 
 .status-archived {
+    background-color: rgba(9, 90, 186, 0.2);
+    color: #0a63cf;
+    border: 1px solid rgba(9, 90, 186, 0.4);
+}
+
+.status-inactive {
     background-color: rgba(239, 68, 68, 0.2);
     color: #EF4444;
     border: 1px solid rgba(239, 68, 68, 0.4);

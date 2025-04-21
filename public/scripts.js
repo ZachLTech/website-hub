@@ -56,7 +56,7 @@ function createLinkCard(project, delay) {
     cardLink.style.animationDelay = `${delay}ms`;
     cardLink.setAttribute('aria-label', `Visit ${project.title}`);
 
-    statusColor = ["archived", "active", "development"].includes(statusColor) ? statusColor : "default";
+    statusColor = ["archived", "active", "development", "inactive"].includes(statusColor) ? statusColor : "default";
     
     let statusHtml = project.status ? 
         `<span class="status status-${statusColor}">${project.status}</span>` : '';
