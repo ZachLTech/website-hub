@@ -22,7 +22,7 @@ function adjustHeight() {
 // Load projects from configuration
 async function loadProjects() {
     try {
-        const response = await fetch('config.json');
+        const response = await fetch('links.json');
         const projects = await response.json();
         
         // Group projects by section

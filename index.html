@@ -3,29 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is the landing page for Zach's personal web. Made by Zach :)">
-        <meta name="keywords" content="keyword1, keyword2, keyword3, ZachLTech, landing, zach, zachltech, zachl, zachary, lopez, personal, web, website, zachl.tech, sshfolio, devfolify, schedulix, eduquest">
+        <meta name="description" content="Zachary Lopez's Link Hub | A site with links to all my socials, projects, self hosted services, and more.">
+        <meta name="keywords" content="ZachLTech, landing, zach, zachltech, zachl, zachary, lopez, personal, web, website, zachl.tech, sshfolio, devfolify, schedulix, eduquest, Link Hub, portfolio, tech portfolio, zachary lopez portfolio, zachary lopez, zach lopez">
         <meta name="author" content="Zachary Lopez - ZachLTech">
         <meta name="robots" content="index, follow">
         <meta name="language" content="en">
         <meta name="theme-color" content="#FF0000">
-        <meta property="og:title" content="ZachLTech - Landing">
-        <meta property="og:description" content="This is the landing page for Zach's personal web. Made by Zach :)">
+        <meta property="og:title" content="ZachLTech - Link Hub">
+        <meta property="og:description" content="Zachary Lopez's Link Hub | A site with links to all my socials, projects, self hosted services, and more.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://zachl.tech">
         <meta property="og:image" content="./assets/myLogo.png">
-        <meta property="og:site_name" content="ZachLTech's Personal Web Landing Page">
+        <meta property="og:site_name" content="ZachLTech - Link Hub">
         <meta property="og:locale" content="en_US">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="ZachLTech - Landing">
-        <meta name="twitter:description" content="This is the landing page for Zach's personal web. Made by Zach :)">
+        <meta name="twitter:title" content="ZachLTech - Link Hub">
+        <meta name="twitter:description" content="Zachary Lopez's Link Hub | A site with links to all my socials, projects, self hosted services, and more.">
         <meta name="twitter:image" content="./assets/myLogo.png">
-        <link rel="canonical" href="https://zachl.tech">
+        <link rel="canonical" href="https://sites.zachl.tech">
         <title>ZachLTech - Link Hub</title>
         <script src="https://kit.fontawesome.com/070428bd88.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/0daa30b3d0.js" crossorigin="anonymous"></script>
         <script src="https://cdn.tailwindcss.com"></script>
-        <script defer data-domain="zachl.tech" src="https://analytics.zachl.tech/js/script.js"></script>
+        <script defer data-domain="sites.zachl.tech" src="https://analytics.zachl.tech/js/script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="scripts.js" defer></script>
         <link rel="icon" type="image/x-icon" href="./favicon.ico">
@@ -35,11 +35,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body class="bg-black bg-cover font-mono min-h-screen flex flex-col">
+        <!-- parallax background -->
         <div class="select-none fixed opacity-[0.05] text-center break-all text-[7vh] sm:text-[6vw] font-mono w-full leading-none text-[#999] z-0">01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000 01000011 01001111 01001101 01001001 01001110 01000111 00100000 01010011 01001111 01001111 01001110 00101110 00101110 00101110 00100000</div>
         
         <main class="flex-grow flex flex-col items-center w-full p-0 z-10">
             <div class="w-full min-h-screen mx-auto rounded-lg overflow-hidden shadow-lg">
-                <!-- Updated Header Section -->
+                <!-- header -->
                 <div class="p-8 border-0">
                     <div class="w-full flex flex-col justify-center items-center text-center">
                         <h1 class="text-3xl md:text-5xl text-white font-bold mb-3">WELCOME TO MY LINK HUB</h1>
@@ -53,9 +54,9 @@
                     </div>
                 </div>
                 
-                <!-- Tab Navigation - Updated with Featured tab -->
+                <!-- tabs -->
                 <div class="border-0 border-y border-white border-opacity-15 bg-black">
-                    <div class="flex justify-between text-sm sm:text-base md:text-lg">
+                    <div class="flex justify-between text-sm sm:text-base md:text-lg overflow-auto">
                         <a href="#featured" class="tab-link py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-white border-opacity-30" data-tab="featured">Featured</a>
                         <a href="#projects" class="tab-link py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-transparent" data-tab="projects">Projects</a>
                         <a href="#work" class="tab-link py-4 px-4 flex-1 text-center text-white hover:bg-white hover:bg-opacity-5 hover:text-white transition-colors border-b-2 border-transparent" data-tab="work">My Work</a>
@@ -64,41 +65,31 @@
                     </div>
                 </div>
                 
-                <!-- Content Area -->
+                <!-- card container & sections -->
                 <div class="p-4 md:p-6 bg-black flex-grow" style="min-height: calc(100vh - 270px);">
-                    <!-- Featured Tab (New Default Active) -->
+                    <!-- featured -->
                     <div class="block min-h-full" id="featured-content">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="featured-container">
-                            <!-- Featured cards will be dynamically inserted here -->
-                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="featured-container"></div>
                     </div>
                     
-                    <!-- Projects Tab -->
+                    <!-- projects -->
                     <div class="hidden min-h-full" id="projects-content">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="projects-container">
-                            <!-- Cards will be dynamically inserted here -->
-                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="projects-container"></div>
                     </div>
                     
-                    <!-- Work Tab -->
+                    <!-- work -->
                     <div class="hidden min-h-full" id="work-content">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="work-container">
-                            <!-- Work items will be dynamically inserted here -->
-                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="work-container"></div>
                     </div>
                     
-                    <!-- Self Hosted Tab -->
+                    <!-- self hosted -->
                     <div class="hidden min-h-full" id="self-hosted-content">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="self-hosted-container">
-                            <!-- Self hosted items will be dynamically inserted here -->
-                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="self-hosted-container"></div>
                     </div>
                     
-                    <!-- Tech Friends Tab -->
+                    <!-- friends -->
                     <div class="hidden min-h-full" id="friends-content">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="friends-container">
-                            <!-- Friends items will be dynamically inserted here -->
-                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="friends-container"></div>
                     </div>
                 </div>
             </div>
