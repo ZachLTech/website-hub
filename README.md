@@ -2,4 +2,4 @@
 
 # <a align="center">My Public Link Lobby</a>
 
-no readme yet :/
+I'm pretty sure this branch is the same as main, I just never merged it though... anyways the new version of this site is available in the minimal branch.
